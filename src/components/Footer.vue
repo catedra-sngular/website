@@ -75,6 +75,7 @@ export default {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-top: 1px solid var(--el-border-color-base);
     padding: 2rem;
+    background: white;
 }
 
 .el-col {
