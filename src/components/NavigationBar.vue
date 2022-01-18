@@ -65,9 +65,13 @@ export default {
     align-items: center;
     width: 100%;
     height: 3rem;
-
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
     font-size: 14px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid var(--el-border-color-base);
 }
 
 .el-select-dropdown__item {
