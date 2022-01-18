@@ -68,7 +68,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+.el-col {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    gap: 1rem;
+}
+
 .footer {
     display: flex;
     font-size: 14px;
@@ -76,39 +84,28 @@ export default {
     border-top: 1px solid var(--el-border-color-base);
     padding: 2rem;
     background: white;
-}
 
-.el-col {
-    height: auto !important;
-}
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--el-text-color-primary);
+    }
 
-.footer__title {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--el-text-color-primary);
-}
+    &__links {
+        display: flex;
+        align-items: flex-start;
+        gap: 15%;
+        margin-bottom: 1rem;
+    }
 
-.footer__links {
-    display: flex;
-    align-items: flex-start;
-    gap: 15%;
-    margin-bottom: 1rem;
-}
+    &__logo {
+        height: 4rem;
+    }
 
-.footer__logo {
-    height: 4rem;
-}
-
-.el-col {
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-    gap: 1rem;
-}
-
-.footer__subtitle {
-    text-align: center;
-    font-size: 16px;
-    color: var(--el-text-color-primary);
+    &__subtitle {
+        text-align: center;
+        font-size: 16px;
+        color: var(--el-text-color-primary);
+    }
 }
 </style>

@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .hero {
     display: flex;
     flex-direction: row;
@@ -42,38 +42,37 @@ export default {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--el-text-color-primary);
     height: 100vh;
-}
 
-.hero__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.hero__title {
-    font-size: 70px;
-    font-weight: bold;
-    text-decoration: underline;
-    line-height: 1;
-    color: rgb(69, 52, 129);
-    text-decoration: underline rgb(69, 52, 129, 0.6);
-}
+    &__title {
+        font-size: 70px;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 1;
+        color: rgb(69, 52, 129);
+        text-decoration: underline rgba(69, 52, 129, 0.6);
+    }
 
-.hero__subtitle {
-    font-size: 65px;
-}
+    &__subtitle {
+        font-size: 65px;
+    }
 
-.hero__description {
-    font-size: 30px;
-}
+    &__description {
+        font-size: 30px;
+    }
 
-.hero__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-li {
-    font-size: 20px;
-    list-style: '✓ ';
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li {
+            font-size: 20px;
+            list-style: '✓ ';
+        }
+    }
 }
 </style>

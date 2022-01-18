@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .el-header {
     display: flex;
     flex-direction: row;
@@ -79,18 +79,18 @@ export default {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.header__logo {
-    height: 3rem;
-}
-
-.header__links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-}
-
-.header__icon {
-    height: 14px;
+.header {
+    &__logo {
+        height: 3rem;
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__icon {
+        height: 14px;
+    }
 }
 </style>
