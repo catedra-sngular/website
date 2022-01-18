@@ -24,7 +24,7 @@ export default {
 .el-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    background: #f9f9f9;
 }
 </style>
