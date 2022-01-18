@@ -2,7 +2,7 @@
     <div class="hero">
         <div class="hero__text">
             <div>
-                <h1 class="hero__title">La FIC y Corunet</h1>
+                <h2 class="hero__title">La FIC y Corunet</h2>
                 <h2 class="hero__subtitle">impulsando la ciencia abierta a través del software</h2>
             </div>
             <div class="hero__description">
@@ -50,7 +50,7 @@ export default {
     }
 
     &__title {
-        font-size: 70px;
+        font-size: 60px;
         font-weight: bold;
         text-decoration: underline;
         line-height: 1;
@@ -59,7 +59,7 @@ export default {
     }
 
     &__subtitle {
-        font-size: 65px;
+        font-size: 40px;
     }
 
     &__description {

@@ -58,30 +58,33 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/styles/styles.scss';
 .el-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     position: sticky;
     top: 0;
-    background: white;
+    background: $background;
     z-index: 1;
     font-size: 14px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-bottom: 1px solid var(--el-border-color-base);
 }
 
-.el-select-dropdown__item {
-    font-size: 14px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.el-select-dropdown {
+    &__item {
+        font-size: 14px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 }
 
 .header {
     &__logo {
-        height: 3rem;
+        height: 4rem;
     }
     &__links {
         display: flex;
