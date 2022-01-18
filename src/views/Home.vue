@@ -1,6 +1,7 @@
 <template>
     <el-main>
         <hero />
+        <objectives />
     </el-main>
 </template>
 
@@ -8,10 +9,11 @@
 import { defineComponent } from 'vue'
 import { ElMain } from 'element-plus'
 import Hero from '@/components/Hero.vue'
+import Objectives from '@/components/Objectives.vue'
 
 export default defineComponent({
     name: 'Home',
-    components: { ElMain, Hero },
+    components: { ElMain, Hero, Objectives },
 })
 </script>
 
