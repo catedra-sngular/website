@@ -55,6 +55,8 @@ export default {
     font-weight: bold;
     text-decoration: underline;
     line-height: 1;
+    color: rgb(69, 52, 129);
+    text-decoration: underline rgb(69, 52, 129, 0.6);
 }
 
 .hero__subtitle {
