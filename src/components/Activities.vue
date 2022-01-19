@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .activities {
     height: 100vh;
     display: flex;
@@ -65,64 +65,64 @@ export default {
     gap: 5%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--el-text-color-primary);
-}
 
-.activities__text {
-    max-width: 50%;
-}
+    &__text {
+        max-width: 50%;
+    }
 
-.activities__title {
-    font-size: 55px;
-    line-height: 1;
-}
+    &__title {
+        font-size: 55px;
+        line-height: 1;
 
-.activities__title > span {
-    color: rgba(236, 99, 40, 1);
-    text-decoration: underline rgba(236, 99, 40, 0.6);
-}
+        & > span {
+            color: rgba(236, 99, 40, 1);
+            text-decoration: underline rgba(236, 99, 40, 0.6);
+        }
+    }
 
-.activities__subtitle {
-    color: var(--el-text-color-secondary);
-    font-size: 20px;
-}
+    &__subtitle {
+        color: var(--el-text-color-secondary);
+        font-size: 20px;
+    }
 
-.activities__description {
-    color: var(--el-text-color-secondary);
-    font-size: 20px;
-}
+    &__description {
+        color: var(--el-text-color-secondary);
+        font-size: 20px;
 
-.activities__description > a {
-    color: rgba(236, 99, 40, 1);
-    text-decoration: none;
-}
+        & > a {
+            color: rgba(236, 99, 40, 1);
+            text-decoration: none;
+        }
+    }
 
-.activities__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    column-gap: 3rem;
-    list-style: none;
-}
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        column-gap: 3rem;
+        list-style: none;
+    }
 
-.activities__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    background-color: rgba(236, 99, 40, 0.6);
-    padding: 1rem;
-    border-radius: 13px;
-    width: 100%;
-}
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        background-color: rgba(236, 99, 40, 0.6);
+        padding: 1rem;
+        border-radius: 13px;
+        width: 100%;
+    }
 
-.activities__item-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
+    &__item-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
 
-.activities__item-number {
-    text-align: right;
+    &__item-number {
+        text-align: right;
+    }
 }
 </style>
