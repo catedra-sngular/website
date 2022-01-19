@@ -49,22 +49,22 @@
                     </el-row>
                 </el-col>
             </el-row>
-            <el-row justify="center" :gutter="10">
+            <el-divider justify="center" :gutter="10">
                 <img class="footer__logo" src="/assets/cicas-logo.svg" />
-            </el-row>
+            </el-divider>
             <el-row justify="center" :gutter="10">
-                <div class="footer__subtitle">Creado desde Corunet con cariño para toda la comunidad</div>
+                <div class="footer__subtitle">De Corunet con <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" /> para la comunidad</div>
             </el-row>
         </el-col>
     </el-footer>
 </template>
 
 <script lang="ts">
-import { ElFooter, ElRow, ElCol, ElLink } from 'element-plus'
+import { ElFooter, ElRow, ElCol, ElLink, ElDivider } from 'element-plus'
 
 export default {
     name: 'Footer',
-    components: { ElFooter, ElRow, ElCol, ElLink },
+    components: { ElFooter, ElRow, ElCol, ElLink, ElDivider },
 }
 </script>
 
@@ -106,6 +106,10 @@ export default {
         text-align: center;
         font-size: 16px;
         color: var(--el-text-color-primary);
+    }
+
+    &__icon {
+        height: 1rem;
     }
 }
 </style>
