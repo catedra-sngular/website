@@ -73,7 +73,7 @@ export default {
 
 .activities__title {
     font-size: 55px;
-    line-height: 0.5;
+    line-height: 1;
 }
 
 .activities__title > span {
