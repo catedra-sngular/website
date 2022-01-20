@@ -71,7 +71,7 @@ export default {
     background: $background;
     z-index: 1;
     font-size: 14px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid var(--el-border-color-base);
 }
 

@@ -1,7 +1,7 @@
 <template>
     <el-footer class="footer" height="min-content">
         <el-col class="footer__content">
-            <el-row class="footer__links" :gutter="10" justify="start" align="middle">
+            <el-row class="footer__links" :gutter="10" justify="start" align="top">
                 <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
                     <el-row class="footer__title">
                         <span>Actividades</span>
@@ -53,7 +53,10 @@
                 <img class="footer__logo" src="/assets/cicas-logo.svg" />
             </el-divider>
             <el-row justify="center" :gutter="10">
-                <div class="footer__subtitle">De Corunet con <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" /> para la comunidad</div>
+                <div class="footer__subtitle">
+                    De Corunet con <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" /> para la
+                    comunidad
+                </div>
             </el-row>
         </el-col>
     </el-footer>
@@ -82,20 +85,23 @@ export default {
     font-size: 14px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-top: 1px solid var(--el-border-color-base);
-    padding: 2rem;
     background: white;
+    padding: 2rem 0;
 
     &__title {
         font-size: 18px;
         font-weight: bold;
         color: var(--el-text-color-primary);
+        margin-bottom: 10px;
     }
 
     &__links {
         display: flex;
         align-items: flex-start;
-        gap: 15%;
+        gap: 10%;
         margin-bottom: 1rem;
+        line-height: 28px;
+        padding: 0rem 6rem;
     }
 
     &__logo {
