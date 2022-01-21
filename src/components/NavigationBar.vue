@@ -4,16 +4,16 @@
             <el-link :underline="false" href="/"><img class="header__logo" src="/assets/cicas-logo.svg" /></el-link>
         </div>
         <div class="header__links">
-            <el-link :underline="false" href="/#objetivos">Objetivos</el-link>
-            <el-link :underline="false" href="/#actividades">Actividades</el-link>
-            <el-link :underline="false" href="/#info">Más info</el-link>
+            <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
+            <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
+            <el-link :underline="false" href="/#info">{{ locale.navbar.moreInfo }}</el-link>
             <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
                 <img class="header__icon" src="/assets/icons/github-icon.svg" />
             </el-link>
             <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
                 <img class="header__icon" src="/assets/icons/discord-icon.svg" />
             </el-link>
-            <el-select v-model="selectedLanguage" class="m-2" placeholder="Idioma">
+            <el-select v-model="selectedLanguage" class="m-2" placeholder="Idioma" @change="setLanguage">
                 <el-option
                     v-for="item in languageOptions"
                     :key="item.value"
@@ -26,14 +26,36 @@
 </template>
 
 <script lang="ts">
-import { ref, Ref } from 'vue'
+import { inject, ref, Ref } from 'vue'
 import { ElHeader, ElLink, ElSelect, ElOption } from 'element-plus'
+import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
 
 export default {
     name: 'NavigationBar',
     components: { ElHeader, ElLink, ElSelect, ElOption },
-    setup(): { selectedLanguage: Ref<string>; languageOptions: { value: string; label: string }[] } {
-        const selectedLanguage = ref('Galego')
+    setup(): {
+        selectedLanguage: Ref<string>
+        languageOptions: { value: string; label: string }[]
+        locale: unknown
+        setLanguage: unknown
+    } {
+        const locale = inject(ProvideLocaleKey)
+        const setLanguage = inject(ProvideSetLanguageKey)
+
+        function getLanguage() {
+            switch (localStorage.getItem('languageId')) {
+                case 'GL':
+                    return 'Galego'
+                case 'ES':
+                    return 'Español'
+                case 'EN':
+                    return 'English'
+                default:
+                    return 'Galego'
+            }
+        }
+
+        const selectedLanguage = ref(getLanguage())
         const languageOptions = [
             {
                 value: 'GL',
@@ -52,6 +74,8 @@ export default {
         return {
             selectedLanguage,
             languageOptions,
+            locale,
+            setLanguage,
         }
     },
 }

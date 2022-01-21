@@ -1,21 +1,25 @@
 <template>
-    <el-container>
-        <navigation-bar />
-        <router-view />
-        <custom-footer />
-    </el-container>
+    <ProvideLanguage>
+        <el-container>
+            <navigation-bar />
+            <router-view />
+            <custom-footer />
+        </el-container>
+    </ProvideLanguage>
 </template>
 
 <script lang="ts">
 import { ElContainer } from 'element-plus'
 import NavigationBar from './components/NavigationBar.vue'
 import Footer from './components/Footer.vue'
+import ProvideLanguage from './providers/Language'
 
 export default {
     components: {
         ElContainer,
         NavigationBar,
         CustomFooter: Footer,
+        ProvideLanguage,
     },
 }
 </script>
