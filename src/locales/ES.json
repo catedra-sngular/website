@@ -3,5 +3,41 @@
         "objectives": "Objetivos",
         "activities": "Actividades",
         "moreInfo": "Más info"
+    },
+    "hero": {
+        "title_1": "Un impulso a la",
+        "title_highlight_1": "ciencia abierta",
+        "title_2": "a través del",
+        "title_highlight_2": "software",
+        "description": "La Universidade da Coruña, la Facultad de Informática (FIC) y Corunet colaboramos para generar nuevas experiencias y potenciar actividades en los siguientes ámbitos:",
+        "items": {
+            "item_1": "La docencia",
+            "item_2": "La investigación",
+            "item_3": "La comunidad",
+            "item_4": "La formación",
+            "item_5": "La sociedad",
+            "item_6": "La industria"
+        }
+    },
+    "objectives": {
+        "title": "Nuestros",
+        "title_highlight": "objetivos",
+        "local_impact": {
+            "title": "De A Coruña para el mundo",
+            "description": "Desde nuestro rinconcito del Atlántico, intentamos contribuir a una comunidad cada vez más global"
+        },
+        "technology_transfer": {
+            "title": "Impulsando la transferencia",
+            "description": "Buscamos promover la transferencia efectiva a la sociedad del software empleado en la investigación"
+        },
+        "open_science": {
+            "title": "Apostando por la Ciencia Abierta",
+            "description": "Queremos potenciar el acceso universal a la ciencia y fomentar la colaboración entre comunidades"
+        },
+        "software": {
+            "title_1": "I+D",
+            "title_2": "Software",
+            "description": "Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la innovación"
+        }
     }
 }
