@@ -3,24 +3,32 @@
         <div class="header__logo">
             <el-link :underline="false" href="/"><img class="header__logo" src="/assets/cicas-logo.svg" /></el-link>
         </div>
-        <div class="header__links">
-            <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
-            <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
-            <el-link :underline="false" href="/#info">{{ locale.navbar.moreInfo }}</el-link>
-            <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
-                <img class="header__icon" src="/assets/icons/github-icon.svg" />
-            </el-link>
-            <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
-                <img class="header__icon" src="/assets/icons/discord-icon.svg" />
-            </el-link>
-            <el-select v-model="selectedLanguage" class="m-2" placeholder="Idioma" @change="setLanguage">
-                <el-option
-                    v-for="item in languageOptions"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value"
-                ></el-option>
-            </el-select>
+        <div class="header__navigation">
+            <div class="header__navigation--links">
+                <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
+                <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
+                <el-link :underline="false" href="/#info">{{ locale.navbar.moreInfo }}</el-link>
+            </div>
+
+            <div class="header__navigation--icons">
+                <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
+                    <img class="header__navigation--icon" src="/assets/icons/github-icon.svg" />
+                </el-link>
+                <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
+                    <img class="header__navigation--icon" src="/assets/icons/discord-icon.svg" />
+                </el-link>
+            </div>
+
+            <div class="header__navigation--language-select">
+                <el-select v-model="selectedLanguage" class="m-2" placeholder="Idioma" @change="setLanguage">
+                    <el-option
+                        v-for="item in languageOptions"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value"
+                    ></el-option>
+                </el-select>
+            </div>
         </div>
     </el-header>
 </template>
