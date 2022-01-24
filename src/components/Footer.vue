@@ -4,48 +4,60 @@
             <el-row class="footer__links" :gutter="10" justify="start" align="top">
                 <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
                     <el-row class="footer__title">
-                        <span>Actividades</span>
+                        <span>{{ locale.footer.activities.title }}</span>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#formacion">De formación</el-link>
+                        <el-link :underline="false" href="/#formacion">{{ locale.footer.activities.training }}</el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#investigacion">De investigación</el-link>
+                        <el-link :underline="false" href="/#investigacion">
+                            {{ locale.footer.activities.research }}
+                        </el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#divulgacion">De divulgación</el-link>
+                        <el-link :underline="false" href="/#divulgacion">
+                            {{ locale.footer.activities.outreach }}
+                        </el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#transferencia">De transferencia</el-link>
-                    </el-row>
-                </el-col>
-                <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
-                    <el-row>
-                        <span class="footer__title">Social</span>
-                    </el-row>
-                    <el-row>
-                        <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf">Comunidad en Discord</el-link>
-                    </el-row>
-                    <el-row>
-                        <el-link :underline="false" href="https://github.com/catedra-corunet"
-                            >Repositorio en Github</el-link
-                        >
-                    </el-row>
-                    <el-row>
-                        <el-link :underline="false" href="https://twitter.com/corunet">Cuenta de Twitter</el-link>
-                    </el-row>
-                    <el-row>
-                        <el-link :underline="false" href="https://www.instagram.com/hola.corunet/"
-                            >Postureo en Instagram</el-link
-                        >
+                        <el-link :underline="false" href="/#transferencia">
+                            {{ locale.footer.activities.transfer }}
+                        </el-link>
                     </el-row>
                 </el-col>
                 <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
                     <el-row>
-                        <span class="footer__title">Comunidad</span>
+                        <span class="footer__title">{{ locale.footer.social.title }}</span>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#atribuciones">Atribuciones</el-link>
+                        <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf">{{
+                            locale.footer.social.discord
+                        }}</el-link>
+                    </el-row>
+                    <el-row>
+                        <el-link :underline="false" href="https://github.com/catedra-corunet">{{
+                            locale.footer.social.github
+                        }}</el-link>
+                    </el-row>
+                    <el-row>
+                        <el-link :underline="false" href="https://twitter.com/corunet">{{
+                            locale.footer.social.twitter
+                        }}</el-link>
+                    </el-row>
+                    <el-row>
+                        <el-link :underline="false" href="https://www.instagram.com/hola.corunet/">{{
+                            locale.footer.social.instagram
+                        }}</el-link>
+                    </el-row>
+                </el-col>
+                <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+                    <el-row>
+                        <span class="footer__title">{{ locale.footer.community.title }}</span>
+                    </el-row>
+                    <el-row>
+                        <el-link :underline="false" href="/#atribuciones">
+                            {{ locale.footer.community.attributions }}
+                        </el-link>
                     </el-row>
                 </el-col>
             </el-row>
@@ -54,8 +66,9 @@
             </el-divider>
             <el-row justify="center" :gutter="10">
                 <div class="footer__subtitle">
-                    De Corunet con <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" /> para la
-                    comunidad
+                    {{ locale.footer.love.love_1 }}
+                    <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" />
+                    {{ locale.footer.love.love_2 }}
                 </div>
             </el-row>
         </el-col>
@@ -64,10 +77,57 @@
 
 <script lang="ts">
 import { ElFooter, ElRow, ElCol, ElLink, ElDivider } from 'element-plus'
+import { inject, ref, Ref } from 'vue'
+import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
 
 export default {
     name: 'Footer',
     components: { ElFooter, ElRow, ElCol, ElLink, ElDivider },
+    setup(): {
+        selectedLanguage: Ref<string>
+        languageOptions: { value: string; label: string }[]
+        locale: unknown
+        setLanguage: unknown
+    } {
+        const locale = inject(ProvideLocaleKey)
+        const setLanguage = inject(ProvideSetLanguageKey)
+
+        function getLanguage() {
+            switch (localStorage.getItem('languageId')) {
+                case 'GL':
+                    return 'Galego'
+                case 'ES':
+                    return 'Español'
+                case 'EN':
+                    return 'English'
+                default:
+                    return 'Galego'
+            }
+        }
+
+        const selectedLanguage = ref(getLanguage())
+        const languageOptions = [
+            {
+                value: 'GL',
+                label: 'Galego',
+            },
+            {
+                value: 'ES',
+                label: 'Español',
+            },
+            {
+                value: 'EN',
+                label: 'English',
+            },
+        ]
+
+        return {
+            selectedLanguage,
+            languageOptions,
+            locale,
+            setLanguage,
+        }
+    },
 }
 </script>
 
