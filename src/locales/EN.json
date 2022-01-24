@@ -39,5 +39,29 @@
             "title_2": "Software",
             "description": "Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la innovación"
         }
+    },
+    "footer": {
+        "activities": {
+            "title": "Activities",
+            "training": "De formación",
+            "research": "De investigación",
+            "outreach": "De divulgación",
+            "transfer": "De transferencia"
+        },
+        "social": {
+            "title": "Social",
+            "discord": "Comunidad en Discord",
+            "github": "Repositorio en Github",
+            "twitter": "Cuenta de Twitter",
+            "instagram": "Postureo en Instagram"
+        },
+        "community": {
+            "title": "Comunidad",
+            "attributions": "Atribuciones"
+        },
+        "love": {
+            "love_1": "De Corunet con",
+            "love_2": "para la comunidad"
+        }
     }
 }

@@ -20,10 +20,10 @@
         }
     },
     "objectives": {
-        "title": "Nuestros",
+        "title": "Os nosos",
         "title_highlight": "objetivos",
         "local_impact": {
-            "title": "Da Coruña para o mundo",
+            "title": "De A Coruña para el mundo",
             "description": "Desde nuestro rinconcito del Atlántico, intentamos contribuir a una comunidad cada vez más global"
         },
         "technology_transfer": {
@@ -38,6 +38,30 @@
             "title_1": "I+D",
             "title_2": "Software",
             "description": "Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la innovación"
+        }
+    },
+    "footer": {
+        "activities": {
+            "title": "Actividades",
+            "training": "De formación",
+            "research": "De investigación",
+            "outreach": "De divulgación",
+            "transfer": "De transferencia"
+        },
+        "social": {
+            "title": "Social",
+            "discord": "Comunidade en Discord",
+            "github": "Repositorio en Github",
+            "twitter": "Cuenta de Twitter",
+            "instagram": "Postureo en Instagram"
+        },
+        "community": {
+            "title": "Comunidad",
+            "attributions": "Atribuciones"
+        },
+        "love": {
+            "love_1": "De Corunet con",
+            "love_2": "para la comunidad"
         }
     }
 }
