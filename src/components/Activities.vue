@@ -1,56 +1,102 @@
 <template>
     <section class="activities" id="actividades">
         <div class="activities__text">
-            <h1 class="activities__title">Queremos <span>tener impacto</span></h1>
+            <h1 class="activities__title">
+                {{ locale.activities.title[0] }}
+                <span>{{ locale.activities.title[1] }}</span>
+            </h1>
             <p class="activities__subtitle">
-                mediante la realización de actividades que contribuyan a lograr los objetivos de la cátedra
+                {{ locale.activities.subtitle }}
             </p>
             <p class="activities__description">
-                En nuestro
-                <a href="https://github.com/catedra-corunet" target="_blank">repositorio de Github</a> encontrarás de
-                manera abierta todo lo relacionado con los proyectos que estamos llevando a cabo, desde esta misma web,
-                hasta el resto de actividades que realicemos durante esta aventura
+                {{ locale.activities.description[0] }}
+                <a href="https://github.com/catedra-corunet" target="_blank">{{ locale.activities.description[1] }}</a>
+                {{ locale.activities.description[2] }}
             </p>
         </div>
         <ul class="activities__list">
             <li class="activities__item">
                 <span class="activities__item-text">
                     <el-icon><star-filled /></el-icon>
-                    Actividades formativas
+                    {{ locale.activities.kind[0] }}
                 </span>
-                <span class="activities__item-number">0</span>
             </li>
             <li class="activities__item">
                 <span class="activities__item-text">
                     <el-icon><share /></el-icon>
-                    Transferencia de tecnología
+                    {{ locale.activities.kind[1] }}
                 </span>
-                <span class="activities__item-number">1</span>
             </li>
             <li class="activities__item">
                 <span class="activities__item-text">
                     <el-icon><opportunity /></el-icon>
-                    Investigación y desarrollo
+                    {{ locale.activities.kind[2] }}
                 </span>
-                <span class="activities__item-number">0</span>
             </li>
             <li class="activities__item">
                 <span class="activities__item-text">
                     <el-icon><collection-tag /></el-icon>
-                    Comunidad
+                    {{ locale.activities.kind[3] }}
                 </span>
-                <span class="activities__item-number">0</span>
             </li>
         </ul>
     </section>
 </template>
 
-<script>
+<script lang="ts">
 import { ElIcon } from 'element-plus'
 import { CollectionTag, StarFilled, Share, Opportunity } from '@element-plus/icons-vue'
+import { inject, ref, Ref } from 'vue'
+import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
+
 export default {
     name: 'Activities',
     components: { ElIcon, CollectionTag, StarFilled, Share, Opportunity },
+    setup(): {
+        selectedLanguage: Ref<string>
+        languageOptions: { value: string; label: string }[]
+        locale: unknown
+        setLanguage: unknown
+    } {
+        const locale = inject(ProvideLocaleKey)
+        const setLanguage = inject(ProvideSetLanguageKey)
+
+        function getLanguage() {
+            switch (localStorage.getItem('languageId')) {
+                case 'GL':
+                    return 'Galego'
+                case 'ES':
+                    return 'Español'
+                case 'EN':
+                    return 'English'
+                default:
+                    return 'Galego'
+            }
+        }
+
+        const selectedLanguage = ref(getLanguage())
+        const languageOptions = [
+            {
+                value: 'GL',
+                label: 'Galego',
+            },
+            {
+                value: 'ES',
+                label: 'Español',
+            },
+            {
+                value: 'EN',
+                label: 'English',
+            },
+        ]
+
+        return {
+            selectedLanguage,
+            languageOptions,
+            locale,
+            setLanguage,
+        }
+    },
 }
 </script>
 
