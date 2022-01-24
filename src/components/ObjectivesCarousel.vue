@@ -52,7 +52,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
     padding: 0% 10%;
 
@@ -99,7 +99,7 @@ export default {
     & > h2 {
         color: #ffffff;
         font-size: 30px;
-        opacity: 0.90;
+        opacity: 0.9;
         line-height: 50px;
         height: 100px;
         margin: 30px;
@@ -108,7 +108,7 @@ export default {
     & > p {
         color: #ffffff;
         font-size: 18px;
-        opacity: 0.90;
+        opacity: 0.9;
         line-height: 30px;
         height: 100px;
         margin: 30px;

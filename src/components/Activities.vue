@@ -63,7 +63,7 @@ export default {
     align-items: center;
     padding: 0% 10%;
     gap: 5%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
 
     &__text {
