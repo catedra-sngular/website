@@ -6,86 +6,88 @@
     },
     "hero": {
         "title": [
-            "Un impulso a la",
-            "ciencia abierta",
-            "a través del",
+            "Let's boost",
+            "open science",
+            "through",
             "software"
         ],
-        "description": "La Universidade da Coruña, la Facultad de Informática (FIC) y Corunet colaboramos para generar nuevas experiencias y potenciar actividades en los siguientes ámbitos:",
+        "description": "With the CICAS chair, the Faculty of Computer Science of A Coruña and Corunet work together to promote",
         "items": [
-            "La docencia",
-            "La investigación",
-            "La comunidad",
-            "La formación",
-            "La sociedad",
-            "La industria"
+            "Technological training",
+            "Quality software",
+            "An open community",
+            "R&D outreach",
+            "Transfer to society",
+            "Industry 4.0"
         ]
     },
     "objectives": {
         "title": [
-            "Nuestros",
-            "objetivos"
+            "Our",
+            "objectives"
         ],
         "local_impact": {
-            "title": "De A Coruña para el mundo",
-            "description": "Desde nuestro rinconcito del Atlántico, intentamos contribuir a una comunidad cada vez más global"
+            "title": "From A Coruña to the world",
+            "description": "Contibuting to a community more global than ever from our Atlantic corner"
         },
         "technology_transfer": {
-            "title": "Impulsando la transferencia",
-            "description": "Buscamos promover la transferencia efectiva a la sociedad del software empleado en la investigación"
+            "title": "Boosting transfer",
+            "description": "Promoting an effective transfer to society of the software used in research"
         },
         "open_science": {
-            "title": "Apostando por la Ciencia Abierta",
-            "description": "Queremos potenciar el acceso universal a la ciencia y fomentar la colaboración entre comunidades"
+            "title": "Supporting Open Science",
+            "description": "Encouraging universal access to science and fostering collaboration between communities"
         },
         "software": {
             "title": [
-                "I+D",
+                "R&D",
                 "Software"
             ],
-            "description": "Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la innovación"
+            "description": "Highlighting the importance of quality software to drive research, development and innovation"
         }
     },
     "activities": {
         "title": [
-            "Queremos",
-            "tener impacto"
+            "We want to have a",
+            "real impact"
         ],
-        "subtitle": "mediante la realización de actividades que contribuyan a lograr los objetivos de la cátedra",
+        "subtitle": "by carrying out training activities and support to the community.",
         "description": [
-            "En nuestro",
-            "repositorio de Github",
-            "encontrarás de manera abierta todo lo relacionado con los proyectos que estamos llevando a cabo, desde esta misma web, hasta el resto de actividades que realicemos durante esta aventura"
+            "In our",
+            "Twitter account",
+            "and in our",
+            "Github repo",
+            "you will openly find all of the information regarding our activities and projects."
         ],
          "kind": [
-            "Actividades formativas",
-            "Investigación y desarrollo",
-            "Transferencia de tecnología",
-            "Comunidad"
+            "Training workshops",
+            "R&D support",
+            "Technology outreach",
+            "Community support"
          ]
     },
     "footer": {
         "activities": {
-            "title": "Actividades",
-            "training": "De formación",
-            "research": "De investigación",
-            "outreach": "De divulgación",
-            "transfer": "De transferencia"
+            "title": "Activities",
+            "training": "Training",
+            "research": "R&D",
+            "outreach": "Outreach",
+            "transfer": "Transfer"
         },
         "social": {
             "title": "Social",
-            "discord": "Comunidad en Discord",
-            "github": "Repositorio en Github",
-            "twitter": "Cuenta de Twitter",
-            "instagram": "Postureo en Instagram"
+            "discord": "Discord community",
+            "github": "Github repo",
+            "twitter": "Twitter",
+            "instagram": "Instagram"
         },
         "community": {
-            "title": "Comunidad",
-            "attributions": "Atribuciones"
+            "title": "Community",
+            "attributions": "Attributions"
         },
         "love": [
-            "De Corunet con",
-            "para la comunidad"
+            "From Corunet with",
+            "to our community"
         ]
     }
 }

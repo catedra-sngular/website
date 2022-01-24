@@ -10,8 +10,10 @@
             </p>
             <p class="activities__description">
                 {{ locale.activities.description[0] }}
-                <a href="https://github.com/catedra-corunet" target="_blank">{{ locale.activities.description[1] }}</a>
+                <a href="https://twitter.com/CatedraCicas" target="_blank">{{ locale.activities.description[1] }}</a>
                 {{ locale.activities.description[2] }}
+                <a href="https://github.com/catedra-corunet" target="_blank">{{ locale.activities.description[3] }}</a>
+                {{ locale.activities.description[4] }}
             </p>
         </div>
         <ul class="activities__list">
