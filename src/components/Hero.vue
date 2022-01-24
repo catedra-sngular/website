@@ -11,42 +11,43 @@
 
         <div class="hero__text">
             <div>
-                <h2 class="hero__text--title">La FIC y Corunet</h2>
-                <h2 class="hero__text--subtitle">impulsando la ciencia abierta a través del software</h2>
+                <h2 class="hero__text--subtitle">{{ locale.hero.title_1 }}</h2>
+                <h2 class="hero__text--title-science">{{ locale.hero.title_highlight_1 }}</h2>
+                <h2 class="hero__text--subtitle">{{ locale.hero.title_2 }}</h2>
+                <h2 class="hero__text--title-software">{{ locale.hero.title_highlight_2 }}</h2>
             </div>
             <div class="hero__text--description">
-                La Universidade da Coruña, la Facultad de Informática (FIC) y Corunet colaboramos para generar nuevas
-                experiencias y potenciar actividades en los siguientes ámbitos:
+                {{ locale.hero.description }}
             </div>
             <ul class="hero__text--list">
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>La docencia</li>
+                    <li>{{ locale.hero.items.item_1 }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">La formación</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items.item_2 }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">La investigación</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items.item_3 }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">La sociedad</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items.item_4 }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">La comunidad</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items.item_5 }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">La producción industrial</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items.item_6 }}</li>
                 </div>
             </ul>
         </div>
@@ -54,13 +55,62 @@
 </template>
 
 <script lang="ts">
+import { inject, ref, Ref } from 'vue'
+import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
+
 export default {
     name: 'Hero',
     components: {},
+    setup(): {
+        selectedLanguage: Ref<string>
+        languageOptions: { value: string; label: string }[]
+        locale: unknown
+        setLanguage: unknown
+    } {
+        const locale = inject(ProvideLocaleKey)
+        const setLanguage = inject(ProvideSetLanguageKey)
+
+        function getLanguage() {
+            switch (localStorage.getItem('languageId')) {
+                case 'GL':
+                    return 'Galego'
+                case 'ES':
+                    return 'Español'
+                case 'EN':
+                    return 'English'
+                default:
+                    return 'Galego'
+            }
+        }
+
+        const selectedLanguage = ref(getLanguage())
+        const languageOptions = [
+            {
+                value: 'GL',
+                label: 'Galego',
+            },
+            {
+                value: 'ES',
+                label: 'Español',
+            },
+            {
+                value: 'EN',
+                label: 'English',
+            },
+        ]
+
+        return {
+            selectedLanguage,
+            languageOptions,
+            locale,
+            setLanguage,
+        }
+    },
 }
 </script>
 
 <style lang="scss">
+@import '@/styles/styles.scss';
 .hero {
     display: flex;
     flex-direction: row;
@@ -99,14 +149,21 @@ export default {
     &__text {
         position: absolute;
         right: 0;
-        top: 190px;
+        top: 120px;
         width: 45%;
         padding-right: 40px;
 
-        &--title {
+        &--title-science {
             font-size: 62px;
             font-weight: 900;
-            color: #6dbfa2;
+            color: $green;
+            margin: -30px 0;
+        }
+
+        &--title-software {
+            font-size: 62px;
+            font-weight: 900;
+            color: $orange;
             margin: -30px 0;
         }
 
@@ -123,6 +180,7 @@ export default {
             font-size: 20px;
             line-height: 34px;
             margin-bottom: 20px;
+            margin-top: 60px;
             color: #222;
             /* color: #e9e9e9; */
         }
