@@ -11,10 +11,10 @@
 
         <div class="hero__text">
             <div>
-                <h2 class="hero__text--subtitle">{{ locale.hero.title_1 }}</h2>
-                <h2 class="hero__text--title-science">{{ locale.hero.title_highlight_1 }}</h2>
-                <h2 class="hero__text--subtitle">{{ locale.hero.title_2 }}</h2>
-                <h2 class="hero__text--title-software">{{ locale.hero.title_highlight_2 }}</h2>
+                <h2 class="hero__text--subtitle">{{ locale.hero.title[0] }}</h2>
+                <h2 class="hero__text--title-science">{{ locale.hero.title[1] }}</h2>
+                <h2 class="hero__text--subtitle">{{ locale.hero.title[2] }}</h2>
+                <h2 class="hero__text--title-software">{{ locale.hero.title[3] }}</h2>
             </div>
             <div class="hero__text--description">
                 {{ locale.hero.description }}
@@ -22,32 +22,32 @@
             <ul class="hero__text--list">
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items.item_1 }}</li>
+                    <li>{{ locale.hero.items[0] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items.item_2 }}</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items[1] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items.item_3 }}</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items[2] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items.item_4 }}</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items[3] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items.item_5 }}</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items[4] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items.item_6 }}</li>
+                    <li class="hero__text--list-item">{{ locale.hero.items[5] }}</li>
                 </div>
             </ul>
         </div>

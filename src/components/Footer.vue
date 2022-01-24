@@ -66,9 +66,9 @@
             </el-divider>
             <el-row justify="center" :gutter="10">
                 <div class="footer__subtitle">
-                    {{ locale.footer.love.love_1 }}
+                    {{ locale.footer.love[0] }}
                     <img class="footer__icon" src="/assets/icons/purple-heart-icon.svg" />
-                    {{ locale.footer.love.love_2 }}
+                    {{ locale.footer.love[1] }}
                 </div>
             </el-row>
         </el-col>

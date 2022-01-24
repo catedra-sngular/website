@@ -1,8 +1,8 @@
 <template>
     <section class="objectives" id="objetivos">
         <h1 class="objectives__title">
-            {{ locale.objectives.title }}
-            <span> {{ locale.objectives.title_highlight }}</span>
+            {{ locale.objectives.title[0] }}
+            <span> {{ locale.objectives.title[1] }}</span>
         </h1>
         <div class="objectives__carousel">
             <el-carousel :interval="5000" type="card" height="300px">
@@ -26,9 +26,9 @@
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__software">
                     <h2>
-                        {{ locale.objectives.software.title_1 }}
+                        {{ locale.objectives.software.title[0] }}
                         <img class="objectives__icon" src="/assets/icons/heart-icon.svg" />
-                        {{ locale.objectives.software.title_2 }}
+                        {{ locale.objectives.software.title[1] }}
                     </h2>
                     <p>
                         {{ locale.objectives.software.description }}
