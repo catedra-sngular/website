@@ -1,33 +1,37 @@
 <template>
     <section class="objectives" id="objetivos">
-        <h1 class="objectives__title">Nuestros <span>objetivos</span></h1>
+        <h1 class="objectives__title">
+            {{ locale.objectives.title }}
+            <span> {{ locale.objectives.title_highlight }}</span>
+        </h1>
         <div class="objectives__carousel">
             <el-carousel :interval="5000" type="card" height="300px">
                 <el-carousel-item class="objectives__item__galicia">
-                    <h2>De A Coruña para el mundo</h2>
+                    <h2>{{ locale.objectives.local_impact.title }}</h2>
                     <p>
-                        Desde nuestro rinconcito del Atlántico, intentamos contribuir a una comunidad cada vez más
-                        global
+                        {{ locale.objectives.local_impact.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__transfer">
-                    <h2>Impulsando la transferencia</h2>
+                    <h2>{{ locale.objectives.technology_transfer.title }}</h2>
                     <p>
-                        Buscamos promover la transferencia efectiva a la sociedad del software empleado en la
-                        investigación
+                        {{ locale.objectives.technology_transfer.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__open-science">
-                    <h2>Apostando por la Ciencia Abierta</h2>
+                    <h2>{{ locale.objectives.open_science.title }}</h2>
                     <p>
-                        Queremos potenciar el acceso universal a la ciencia y fomentar la colaboración entre comunidades
+                        {{ locale.objectives.open_science.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__software">
-                    <h2>I+D <img class="objectives__icon" src="/assets/icons/heart-icon.svg" /> Software</h2>
+                    <h2>
+                        {{ locale.objectives.software.title_1 }}
+                        <img class="objectives__icon" src="/assets/icons/heart-icon.svg" />
+                        {{ locale.objectives.software.title_2 }}
+                    </h2>
                     <p>
-                        Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la
-                        innovación
+                        {{ locale.objectives.software.description }}
                     </p>
                 </el-carousel-item>
             </el-carousel>
@@ -36,11 +40,58 @@
 </template>
 
 <script lang="ts">
+import { inject, ref, Ref } from 'vue'
 import { ElCarousel } from 'element-plus'
+import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
 
 export default {
     name: 'Objectives',
     components: { ElCarousel },
+    setup(): {
+        selectedLanguage: Ref<string>
+        languageOptions: { value: string; label: string }[]
+        locale: unknown
+        setLanguage: unknown
+    } {
+        const locale = inject(ProvideLocaleKey)
+        const setLanguage = inject(ProvideSetLanguageKey)
+
+        function getLanguage() {
+            switch (localStorage.getItem('languageId')) {
+                case 'GL':
+                    return 'Galego'
+                case 'ES':
+                    return 'Español'
+                case 'EN':
+                    return 'English'
+                default:
+                    return 'Galego'
+            }
+        }
+
+        const selectedLanguage = ref(getLanguage())
+        const languageOptions = [
+            {
+                value: 'GL',
+                label: 'Galego',
+            },
+            {
+                value: 'ES',
+                label: 'Español',
+            },
+            {
+                value: 'EN',
+                label: 'English',
+            },
+        ]
+
+        return {
+            selectedLanguage,
+            languageOptions,
+            locale,
+            setLanguage,
+        }
+    },
 }
 </script>
 
