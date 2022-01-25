@@ -25,7 +25,7 @@
                         </el-link>
                     </el-row>
                 </el-col>
-                <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+                <el-col :xs="12" :sm="6" :md="4" :lg="3" :xl="1">
                     <el-row>
                         <span class="footer__title">{{ locale.footer.social.title }}</span>
                     </el-row>
@@ -143,7 +143,7 @@ export default {
 .footer {
     display: flex;
     font-size: 14px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-top: 1px solid var(--el-border-color-base);
     background: white;
     padding: 2rem 0;
@@ -176,6 +176,37 @@ export default {
 
     &__icon {
         height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        &__title {
+            font-size: 16px;
+            margin-top: 50px;
+        }
+
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            line-height: 28px;
+            padding: 0rem 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        &__logo {
+            height: 4rem;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: var(--el-text-color-primary);
+        }
+
+        &__icon {
+            height: 0.8rem;
+        }
     }
 }
 </style>

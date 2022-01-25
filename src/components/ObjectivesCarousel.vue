@@ -1,5 +1,6 @@
 <template>
     <section class="objectives" id="objetivos">
+        <div class="background-img"></div>
         <h1 class="objectives__title">
             {{ locale.objectives.title[0] }}
             <span> {{ locale.objectives.title[1] }}</span>
@@ -7,30 +8,30 @@
         <div class="objectives__carousel">
             <el-carousel :interval="5000" type="card" height="300px">
                 <el-carousel-item class="objectives__item__galicia">
-                    <h2>{{ locale.objectives.local_impact.title }}</h2>
-                    <p>
+                    <h2 class="objectives__item--title">{{ locale.objectives.local_impact.title }}</h2>
+                    <p class="objectives__item--description">
                         {{ locale.objectives.local_impact.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__transfer">
-                    <h2>{{ locale.objectives.technology_transfer.title }}</h2>
-                    <p>
+                    <h2 class="objectives__item--title">{{ locale.objectives.technology_transfer.title }}</h2>
+                    <p class="objectives__item--description">
                         {{ locale.objectives.technology_transfer.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__open-science">
-                    <h2>{{ locale.objectives.open_science.title }}</h2>
-                    <p>
+                    <h2 class="objectives__item--title">{{ locale.objectives.open_science.title }}</h2>
+                    <p class="objectives__item--description">
                         {{ locale.objectives.open_science.description }}
                     </p>
                 </el-carousel-item>
                 <el-carousel-item class="objectives__item__software">
-                    <h2>
+                    <h2 class="objectives__item--title">
                         {{ locale.objectives.software.title[0] }}
                         <img class="objectives__icon" src="/assets/icons/heart-icon.svg" />
                         {{ locale.objectives.software.title[1] }}
                     </h2>
-                    <p>
+                    <p class="objectives__item--description">
                         {{ locale.objectives.software.description }}
                     </p>
                 </el-carousel-item>
@@ -97,6 +98,11 @@ export default {
 
 <style lang="scss">
 @import '@/styles/styles.scss';
+
+.el-carousel__item--card {
+    border-radius: 18px;
+}
+
 .objectives {
     height: 100vh;
     display: flex;
@@ -110,23 +116,26 @@ export default {
     &__title {
         font-size: 60px;
         color: $lightpurple;
+        z-index: 1;
+        margin-bottom: 150px;
+        font-weight: 900;
     }
 
     &__title > span {
         color: $darkpurple;
-        text-decoration: underline $darkpurple;
     }
 
     &__item {
         text-align: center;
+
         &__galicia {
             background-color: $darkpurple;
         }
         &__transfer {
-            background-color: $lightpurple;
+            background-color: $green;
         }
         &__open-science {
-            background-color: $green;
+            background-color: $lightpurple;
         }
         &__software {
             background-color: $orange;
@@ -134,11 +143,12 @@ export default {
     }
 
     &__carousel {
-        width: 100%;
+        width: 80%;
     }
 
     &__carousel-item {
         text-align: center;
+        border-radius: 20px;
     }
 
     &__icon {
@@ -164,6 +174,78 @@ export default {
         height: 100px;
         margin: 30px;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .objectives {
+        padding: 0% 10%;
+
+        &__title {
+            font-size: 34px;
+            display: flex;
+            gap: 14px;
+            margin-bottom: 100px;
+            margin-top: -100px;
+            font-weight: 800;
+        }
+
+        &__title > span {
+            color: $darkpurple;
+        }
+
+        &__item {
+            text-align: center;
+
+            &__galicia {
+                background-color: $darkpurple;
+                font-size: 12px;
+            }
+            &__transfer {
+                background-color: $green;
+            }
+            &__open-science {
+                background-color: $lightpurple;
+            }
+            &__software {
+                background-color: $orange;
+            }
+        }
+
+        &__carousel {
+            width: 120%;
+        }
+
+        &__carousel-item {
+            text-align: center;
+        }
+
+        &__icon {
+            height: 18px;
+        }
+    }
+
+    .el-carousel__item {
+        & > h2 {
+            color: #ffffff;
+            font-size: 18px;
+            opacity: 0.9;
+            line-height: 36px;
+            height: auto;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+        }
+        & > p {
+            color: #ffffff;
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 26px;
+            height: auto;
+            margin: 0px;
+            padding: 10px;
+            text-align: left;
+        }
     }
 }
 </style>

@@ -31,4 +31,10 @@ export default {
     width: 100%;
     background: #f9f9f9;
 }
+
+@media only screen and (max-width: 600px) {
+    .el-container {
+        width: 100%;
+    }
+}
 </style>

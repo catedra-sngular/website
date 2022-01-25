@@ -1,23 +1,19 @@
 <template>
     <div class="hero">
         <div class="hero__image">
-            <div class="hero__image--piti hidden-xs-only">
+            <div class="hero__image--piti">
                 <img src="/assets/images/sciencepitica.png" />
             </div>
-            <div class="hero__image--circle1 hidden-xs-only">
-                <img src="/assets/images/circlegreen.png" />
-            </div>
 
-            <div class="hero__image--circle2 hidden-xs-only">
-                <img src="/assets/images/circlelightpurple.png" />
+            <div class="hero__image--blob1">
+                <img src="/assets/images/blobpurple.png" />
             </div>
-
-            <div class="hero__image--circle3 hidden-xs-only">
-                <img src="/assets/images/circleorange.png" />
-            </div>
-
-            <div class="hero__image--blob1 hidden-xs-only">
+            <div class="hero__image--blob1">
                 <img src="/assets/images/bloblightpurple.png" />
+            </div>
+
+            <div class="hero__image--circle1">
+                <img src="/assets/images/circlelightpurple.png" />
             </div>
         </div>
 
@@ -133,16 +129,20 @@ export default {
     font-family: 'Montserrat', sans-serif;
     background: #ffffff;
     position: relative;
-    /* background-image: url('../../public/assets/images/pic2test.jpeg'); */
+    background-image: url('../../public/assets/images/pic2test.jpeg');
+    background-position: center;
+    background-size: cover;
+
+    /* background-image: url('../../public/assets/images/pic3test.jpeg'); */
     height: 100vh;
 
     &__image {
-        width: 50%;
+        width: 40%;
 
         &--piti img {
             position: absolute;
             top: 120px;
-            left: 270px;
+            left: 230px;
             margin: auto;
             height: 570px;
             z-index: 100;
@@ -151,37 +151,19 @@ export default {
         &--circle1 img {
             /*verde*/
             z-index: 0;
-            height: 250px;
+            height: 150px;
             position: absolute;
-            bottom: 150px;
-            left: 150px;
+            top: 120px;
+            left: 620px;
             margin: auto;
         }
-        &--circle2 img {
-            /*violeta*/
+
+        &--blob1 img {
             z-index: 0;
-            height: 500px;
-            position: absolute;
-            top: 300px;
-            right: 1000px;
-            margin: auto;
-        }
-        &--circle3 img {
-            /*naranja*/
-            z-index: 0;
-            height: 400px;
+            height: 600px;
             position: absolute;
             top: 130px;
-            left: 120px;
-            margin: auto;
-        }
-        &--blob1 img {
-            /*naranja*/
-            z-index: 0;
-
-            position: absolute;
-            top: 0px;
-            right: 80px;
+            left: 110px;
             margin: auto;
         }
     }
@@ -191,13 +173,13 @@ export default {
         right: 0;
         top: 120px;
         width: 45%;
-        padding-right: 40px;
 
         &--title-science {
-            font-size: 52px;
+            font-size: 50px;
             font-weight: 900;
             color: $green;
             margin: -30px 0;
+            text-shadow: 1px 1px 2px rgb(82, 82, 82);
         }
 
         &--title-software {
@@ -205,14 +187,16 @@ export default {
             font-weight: 900;
             color: $orange;
             margin: -30px 0;
+            text-shadow: 1px 1px 2px rgb(82, 82, 82);
         }
 
         &--subtitle {
-            font-size: 52px;
+            font-size: 48px;
             line-height: 65px;
             width: 100%;
             margin-bottom: 40px;
             color: #222;
+            text-shadow: 1px 1px 2px rgb(82, 82, 82);
             /* color: #e9e9e9; */
         }
 
@@ -245,6 +229,82 @@ export default {
         &--check {
             color: #6dbfa2;
             margin-right: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: calc(100vh - 62px);
+
+        &__image {
+            width: 40%;
+
+            &--piti img {
+                position: absolute;
+                bottom: -360px; /**/
+                left: 115px;
+                margin: auto;
+                height: 250px;
+                z-index: 1;
+            }
+
+            &--circle1 img {
+                position: absolute;
+                bottom: -120px; /**/
+                left: 270px;
+                margin: auto;
+                height: 80px;
+                z-index: 1;
+            }
+
+            &--blob1 img {
+                height: 280px;
+                bottom: -360px;
+                left: 50px;
+            }
+        }
+
+        &__text {
+            position: absolute;
+            left: 25px;
+            top: 20px;
+            width: 90%;
+
+            &--title-science {
+                font-size: 32px;
+                font-weight: 800;
+            }
+
+            &--title-software {
+                font-size: 32px;
+                font-weight: 800;
+            }
+
+            &--subtitle {
+                font-size: 30px;
+                line-height: 50px;
+                margin: 32px 0px;
+            }
+
+            &--description {
+                font-size: 14px;
+                line-height: 26px;
+                margin-bottom: 0px;
+                margin-top: -10px;
+                color: #222;
+            }
+
+            &--list {
+                grid-template-columns: repeat(1, 1fr);
+                line-height: 30px;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            &--check {
+                margin-right: 12px;
+            }
         }
     }
 }
