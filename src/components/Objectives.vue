@@ -52,7 +52,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
     padding: 0% 10%;
 

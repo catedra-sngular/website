@@ -302,7 +302,7 @@ export default {
                 line-height: 26px;
                 width: 90%;
                 text-align: justify;
-                margin-top: 50px;
+                margin-top: 20px;
             }
 
             &--description {

@@ -132,7 +132,6 @@ export default {
     background-image: url('../../public/assets/images/pic2test.jpeg');
     background-position: center;
     background-size: cover;
-
     /* background-image: url('../../public/assets/images/pic3test.jpeg'); */
     height: 100vh;
 
