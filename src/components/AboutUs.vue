@@ -1,9 +1,6 @@
 <template>
     <section class="about-us" id="about-us">
-        <h1 class="about-us__title">
-            {{ locale.objectives.title[0] }}
-            <span> {{ locale.objectives.title[1] }}</span>
-        </h1>
+        <h1 class="about-us__title">¿Quienes somos?</h1>
 
         <div class="about-us__cards">
             <div class="about-us__card">
