@@ -126,6 +126,8 @@ export default {
     background: #ffffff;
     position: relative;
     background-image: url('../../public/assets/images/pic2test.jpeg');
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 
     &__image {

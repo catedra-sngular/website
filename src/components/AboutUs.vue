@@ -253,6 +253,11 @@ export default {
             letter-spacing: 1px;
             border-radius: 8px;
             text-decoration: none;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: linear-gradient($lightpurple, $darkpurple);
+            }
         }
     }
 }
