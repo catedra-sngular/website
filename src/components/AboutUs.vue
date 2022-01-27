@@ -5,23 +5,16 @@
         <div class="about-us__cards">
             <div class="about-us__card">
                 <div class="about-us__card--image">
-                    <div class="about-us__card--logo">
+                    <div class="about-us__card--logo-corunet">
                         <img src="/assets/images/logoCORUNET.svg" />
                     </div>
-
-                    <!-- <div class="about-us__card--circle">
-                    <img src="/assets/images/circlelightpurple.png" />
-                </div> -->
                 </div>
-
                 <div class="about-us__card--text">
                     <h3 class="about-us__card--text-title">Corunet</h3>
                     <p class="about-us__card--text-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, asperiores laborum? Ut veniam
-                        consequuntur voluptate quasi, libero harum pariatur accusamus expedita iure magnam optio
-                        tempora.
+                        Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
+                        grandes empresas.
                     </p>
-
                     <a class="about-us__card--link" href="https://coru.net/" target="_blank">Ver más</a>
                     <a href=""></a>
                 </div>
@@ -29,58 +22,53 @@
 
             <div class="about-us__card">
                 <div class="about-us__card--image">
-                    <div class="about-us__card--logo">
-                        <img src="/assets/images/logoCORUNET.svg" />
+                    <div class="about-us__card--logo-udc">
+                        <img src="/assets/images/00.png" />
                     </div>
-
-                    <!-- <div class="about-us__card--circle">
-                    <img src="/assets/images/circlelightpurple.png" />
-                </div> -->
                 </div>
-
                 <div class="about-us__card--text">
-                    <h3 class="about-us__card--text-title">FIC</h3>
+                    <h3 class="about-us__card--text-title">Universidade da Coruña</h3>
                     <p class="about-us__card--text-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, asperiores laborum? Ut veniam
-                        consequuntur voluptate quasi, libero harum pariatur accusamus expedita iure magnam optio
-                        tempora.
+                        Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
+                        grandes empresas.
                     </p>
-
-                    <a class="about-us__card--link" href="https://coru.net/" target="_blank">Ver más</a>
+                    <a class="about-us__card--link" href="https://www.udc.es/" target="_blank">Ver más</a>
                     <a href=""></a>
                 </div>
             </div>
 
             <div class="about-us__card">
                 <div class="about-us__card--image">
-                    <div class="about-us__card--logo">
-                        <img src="/assets/images/logoCORUNET.svg" />
+                    <div class="about-us__card--logo-fic">
+                        <img src="/assets/images/logoFIC.png" />
                     </div>
-
-                    <!-- <div class="about-us__card--circle">
-                    <img src="/assets/images/circlelightpurple.png" />
-                </div> -->
                 </div>
-
                 <div class="about-us__card--text">
-                    <h3 class="about-us__card--text-title">Universidad</h3>
+                    <h3 class="about-us__card--text-title">Facultade de Informática</h3>
                     <p class="about-us__card--text-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, asperiores laborum? Ut veniam
-                        consequuntur voluptate quasi, libero harum pariatur accusamus expedita iure magnam optio
-                        tempora.
+                        Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
+                        grandes empresas.
                     </p>
-
-                    <a class="about-us__card--link" href="https://coru.net/" target="_blank">Ver más</a>
+                    <a class="about-us__card--link" href="https://www.fic.udc.es/" target="_blank">Ver más</a>
                     <a href=""></a>
                 </div>
             </div>
         </div>
+        <!-- <div class="about-us__image">
+            <div class="about-us__image--blob1">
+                <img src="/assets/images/blobpurple.png" />
+            </div>
+            <div class="about-us__image--blob1">
+                <img src="/assets/images/bloblightpurple.png" />
+            </div>
+            <div class="about-us__image--circle1">
+                <img src="/assets/images/circlelightpurple.png" />
+            </div>
+        </div> -->
     </section>
 </template>
 
 <script lang="ts">
-import { ElIcon } from 'element-plus'
-import { CollectionTag, StarFilled, Share, Opportunity } from '@element-plus/icons-vue'
 import { inject, ref, Ref } from 'vue'
 import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
 
@@ -136,6 +124,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/styles/styles.scss';
 .about-us {
     height: 100vh;
     display: flex;
@@ -143,49 +132,81 @@ export default {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+    &__image {
+        z-index: 0;
+
+        &--blob1 img {
+            height: 650px;
+            width: 700px;
+            position: absolute;
+            top: 220px;
+            left: 550px;
+            margin: auto;
+        }
+
+        &--circle1 img {
+            z-index: 0;
+            height: 150px;
+            position: absolute;
+            top: 220px;
+            right: 450px;
+            margin: auto;
+        }
+    }
 
     &__title {
         font-size: 60px;
-        color: purple;
+        color: $darkpurple;
         z-index: 1;
         margin-bottom: 150px;
+        margin-top: 50px;
         font-weight: 900;
-    }
-
-    &__title > span {
-        color: purple;
     }
 
     &__cards {
         display: flex;
-        gap: 60px;
+        gap: 50px;
         margin-top: -70px;
+        z-index: 1;
     }
 
     &__card {
-        height: 550px;
-        width: 350px;
-        box-shadow: 0px 0px 10px rgb(124, 124, 124);
+        height: 500px;
+        width: 360px;
+        box-shadow: 4px 4px 6px rgb(199, 199, 199);
         padding: 10px;
         border-radius: 16px;
-        z-index: 1;
+        z-index: 9;
         position: relative;
+        background: linear-gradient(rgba(236, 236, 236, 0.753), rgb(255, 255, 255));
+        border: 1px solid rgb(226, 226, 226);
 
-        &--logo img {
-            height: 280px;
+        &--logo-corunet img {
+            height: 260px;
             position: absolute;
-            top: -10px;
-            left: 87px;
+            top: 0;
+            left: 95px;
             z-index: 222;
         }
-        /* 
-        &--circle img {
-            height: 350px;
+
+        &--logo-udc img {
+            height: 120px;
+            width: 220px;
             position: absolute;
-            top: -120px;
-            left: 10px;
-            z-index: 2;
-        } */
+            top: 60px;
+            left: 80px;
+            z-index: 222;
+        }
+
+        &--logo-fic img {
+            height: 140px;
+            position: absolute;
+            top: 50px;
+            left: 118px;
+            z-index: 222;
+        }
 
         &--text {
             display: flex;
@@ -197,17 +218,21 @@ export default {
 
         &--text-title {
             text-transform: uppercase;
-            color: purple;
-            font-size: 32px;
+            color: $lightpurple;
+            font-size: 20px;
             margin: 0;
-            margin-top: 30px;
+            margin-top: 60px;
+            width: 90%;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgb(223, 223, 223);
         }
 
         &--text-description {
             font-size: 16px;
             line-height: 26px;
             margin: 0 auto;
-            color: rgb(65, 65, 65);
+            font-weight: 500;
+            color: rgb(114, 114, 114);
             text-align: justify;
             padding: 0 20px;
             margin: 20px 0;
@@ -218,8 +243,9 @@ export default {
             border: none;
             outline: none;
             margin-top: 20px;
-            background: purple;
+            background: linear-gradient($darkpurple, $lightpurple);
             color: white;
+            text-shadow: 0px 0px 1px white;
             font-size: 14px;
             text-transform: uppercase;
             font-family: 'Montserrat', sans-serif;

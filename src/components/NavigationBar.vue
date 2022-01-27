@@ -7,7 +7,7 @@
             <div class="header__navigation--links">
                 <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
                 <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
-                <el-link :underline="false" href="/#info">{{ locale.navbar.moreInfo }}</el-link>
+                <el-link :underline="false" href="/#about-us">{{ locale.navbar.moreInfo }}</el-link>
             </div>
 
             <div class="header__navigation--icons">

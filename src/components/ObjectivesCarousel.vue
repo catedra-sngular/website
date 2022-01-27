@@ -115,14 +115,14 @@ export default {
 
     &__title {
         font-size: 60px;
-        color: $lightpurple;
+        color: $green;
         z-index: 1;
         margin-bottom: 150px;
         font-weight: 900;
     }
 
     &__title > span {
-        color: $darkpurple;
+        color: $green;
     }
 
     &__item {
