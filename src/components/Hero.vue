@@ -19,12 +19,12 @@
 
         <div class="hero__text">
             <div class="hero__text--title">
-                <h2 class="hero__text--subtitle">{{ locale.hero.title[0] }}</h2>
+                <h2 class="hero__text--title-main">{{ locale.hero.title[0] }}</h2>
                 <h2 class="hero__text--title-science">{{ locale.hero.title[1] }}</h2>
-                <h2 class="hero__text--subtitle">
-                    {{ locale.hero.title[2] }}
-                    <span class="hero__text--title-software">{{ locale.hero.title[3] }}</span>
-                </h2>
+                <div class="ei">
+                    <h2 class="hero__text--title-main">{{ locale.hero.title[2] }}</h2>
+                    <h2 class="hero__text--title-software">{{ locale.hero.title[3] }}</h2>
+                </div>
             </div>
             <div class="hero__text--description">
                 {{ locale.hero.description }}
@@ -37,27 +37,27 @@
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items[1] }}</li>
+                    <li>{{ locale.hero.items[1] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items[2] }}</li>
+                    <li>{{ locale.hero.items[2] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items[3] }}</li>
+                    <li>{{ locale.hero.items[3] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items[4] }}</li>
+                    <li>{{ locale.hero.items[4] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li class="hero__text--list-item">{{ locale.hero.items[5] }}</li>
+                    <li>{{ locale.hero.items[5] }}</li>
                 </div>
             </ul>
         </div>
@@ -121,6 +121,9 @@ export default {
 
 <style lang="scss">
 @import '@/styles/styles.scss';
+.ei {
+    display: flex;
+}
 .hero {
     display: flex;
     flex-direction: row;
@@ -144,6 +147,14 @@ export default {
             margin: auto;
             height: 570px;
             z-index: 100;
+            transition: 0.6s ease;
+            /* transition: 5s; */
+
+            &:hover {
+                transform: rotate(10deg);
+                /* transform: rotate(1080deg); */
+                height: 610px;
+            }
         }
 
         &--circle1 img {
@@ -178,24 +189,37 @@ export default {
             color: $green;
             margin: -30px 0;
             text-shadow: 1px 1px 2px rgb(82, 82, 82);
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                margin-left: 36px;
+            }
         }
 
         &--title-software {
             font-size: 52px;
             font-weight: 900;
             color: $orange;
-            margin: -30px 0;
             text-shadow: 1px 1px 2px rgb(82, 82, 82);
-        }
-
-        &--subtitle {
             font-size: 48px;
             line-height: 65px;
-            width: 100%;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                margin-left: 36px;
+            }
+        }
+
+        &--title-main {
+            font-size: 48px;
+            line-height: 65px;
             margin-bottom: 40px;
             color: #222;
             text-shadow: 1px 1px 2px rgb(82, 82, 82);
-            /* color: #e9e9e9; */
         }
 
         &--description {
@@ -204,7 +228,6 @@ export default {
             margin-bottom: 20px;
             margin-top: 60px;
             color: #222;
-            /* color: #e9e9e9; */
         }
 
         &--list {
@@ -212,7 +235,6 @@ export default {
             grid-template-columns: repeat(2, 1fr);
             line-height: 40px;
             color: #222;
-            /* color: #e9e9e9; */
             font-weight: 600;
             list-style: none;
             padding: 0;
@@ -222,6 +244,11 @@ export default {
         &--list-item {
             display: flex;
             flex-direction: row;
+            transition: 0.4s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         &--check {

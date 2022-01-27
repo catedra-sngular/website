@@ -125,9 +125,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     background: #ffffff;
     position: relative;
-    background-image: url('../../public/assets/images/pic2test.jpeg');
-    background-position: center;
-    background-size: cover;
+    /* background-image: url('../../public/assets/images/pic2test.jpeg'); */
     height: 100vh;
 
     &__image {
@@ -169,9 +167,11 @@ export default {
             font-weight: 800;
             margin-top: -30px;
             color: rgba(236, 99, 40, 1);
+            transition: 0.4s ease;
 
             &:hover {
-                color: rgba(236, 99, 40, 0.8);
+                transform: scale(1.1);
+                margin-left: 30px;
             }
         }
 
@@ -189,14 +189,11 @@ export default {
             line-height: 34px;
             width: 90%;
             text-align: justify;
+            transition: 0.4s ease;
 
             & > a {
                 color: rgba(236, 99, 40, 1);
                 text-decoration: none;
-
-                &:hover {
-                    color: rgba(236, 99, 40, 0.7);
-                }
             }
         }
     }
@@ -216,17 +213,21 @@ export default {
             flex-direction: row;
             justify-content: space-between;
             background-color: rgb(236, 99, 40);
-            padding: 1.2rem;
+            padding: 1.4rem 1.2rem;
             border-radius: 12px;
             width: 90%;
             box-shadow: 0px 0px 4px rgb(230, 230, 230);
+            cursor: pointer;
+            transition: 0.4s ease;
 
             &:hover {
-                background-color: rgb(221, 113, 66);
+                transform: scale(1.1) translateY(-7px);
+                box-shadow: 0px 0px 14px rgb(230, 230, 230);
             }
         }
 
         &--item-text {
+            font-size: 18px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -331,7 +332,7 @@ export default {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                background-color: rgb(236, 99, 40);
+                background-color: rgb(37, 25, 19);
                 padding: 1rem;
                 border-radius: 12px;
                 width: 90%;

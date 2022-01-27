@@ -2,8 +2,7 @@
     <section class="objectives" id="objetivos">
         <div class="background-img"></div>
         <h1 class="objectives__title">
-            {{ locale.objectives.title[0] }}
-            <span> {{ locale.objectives.title[1] }}</span>
+            {{ locale.objectives.title }}
         </h1>
         <div class="objectives__carousel">
             <el-carousel :interval="5000" type="card" height="300px">
@@ -112,6 +111,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
     padding: 0% 10%;
+    background: white;
 
     &__title {
         font-size: 60px;
@@ -119,10 +119,11 @@ export default {
         z-index: 1;
         margin-bottom: 150px;
         font-weight: 900;
-    }
+        transition: 0.4s ease;
 
-    &__title > span {
-        color: $green;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__item {
@@ -182,9 +183,11 @@ export default {
         padding: 0% 10%;
 
         &__title {
-            font-size: 34px;
+            font-size: 32px;
             display: flex;
-            gap: 14px;
+            width: 110%;
+            gap: 0px;
+            margin-left: 15px;
             margin-bottom: 100px;
             margin-top: -100px;
             font-weight: 800;
