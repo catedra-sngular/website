@@ -147,12 +147,12 @@ export default {
             margin: auto;
             height: 570px;
             z-index: 100;
-            transition: 0.6s ease;
-            /* transition: 5s; */
+            /* transition: 0.6s ease; */
+            transition: 5s;
 
             &:hover {
-                transform: rotate(10deg);
-                /* transform: rotate(1080deg); */
+                /* transform: rotate(10deg); */
+                transform: rotate(1080deg);
                 height: 610px;
             }
         }
