@@ -132,7 +132,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     background: #ffffff;
     position: relative;
-    background-image: url('../../public/assets/images/pic2test.jpeg');
+    background-image: url('../../public/assets/images/pic5test.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -147,12 +147,12 @@ export default {
             margin: auto;
             height: 570px;
             z-index: 100;
-            transition: 0.6s ease;
-            /* transition: 5s; */
+            /* transition: 0.6s ease; */
+            transition: 4s;
 
             &:hover {
-                transform: rotate(10deg);
-                /* transform: rotate(1080deg); */
+                /* transform: rotate(6deg); */
+                transform: rotate(1440deg);
                 height: 610px;
             }
         }

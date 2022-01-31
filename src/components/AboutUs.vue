@@ -129,7 +129,7 @@ export default {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    background-image: url('../../public/assets/images/pic2test.jpeg');
+    background-image: url('../../public/assets/images/pic5test.jpg');
     background-position: center;
     background-size: cover;
 
