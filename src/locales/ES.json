@@ -1,7 +1,93 @@
 {
     "navbar": {
-        "objectives": "Objetivos",
-        "activities": "Actividades",
-        "moreInfo": "Más info"
+        "objectives": "¿Para qué es esto?",
+        "activities": "¿Qué vamos a hacer?",
+        "about_us": "¿Quiénes somos?"
+    },
+    "hero": {
+        "title": ["Un impulso a la", "ciencia abierta", "a través del", "software"],
+        "description": "Con la cátedra CICAS, la Facultad de Informática de A Coruña y Corunet colaboramos para promover",
+        "items": [
+            "La formación tecnológica",
+            "El software de calidad",
+            "Una comunidad abierta",
+            "La divulgación de la I+D",
+            "La transferencia a la sociedad",
+            "La industria 4.0"
+        ]
+    },
+    "objectives": {
+        "title": [
+            "Nuestros",
+            "objetivos"
+        ],
+        "local_impact": {
+            "title": "De A Coruña para el mundo",
+            "description": "Desde nuestro rinconcito del Atlántico, intentamos contribuir a formar una comunidad cada vez más global, plural e igualitaria"
+        },
+        "technology_transfer": {
+            "title": "Impulsando la transferencia",
+            "description": "Buscamos promover la transferencia efectiva a la sociedad del software empleado en la investigación"
+        },
+        "open_science": {
+            "title": "Apostando por la Ciencia Abierta",
+            "description": "Queremos potenciar el acceso universal a la ciencia y fomentar la colaboración entre comunidades"
+        },
+        "software": {
+            "title": ["I+D", "Software"],
+            "description": "Creemos en la importancia del buen software para impulsar la investigación, el desarrollo y la innovación"
+        }
+    },
+    "activities": {
+        "title": ["Queremos tener un", "impacto real"],
+        "subtitle": "y para eso realizaremos actividades formativas e innovadoras, de promoción y de apoyo a la comunidad, de divulgación...",
+        "description": [
+            "En nuestra",
+            "cuenta de Twitter",
+            "y en el",
+            "repositorio de Github",
+            "encontrarás de manera abierta todas las actividades y proyectos que llevemos a cabo."
+        ],
+        "kind": ["Talleres de formación", "Soporte a la I+D", "Divulgación tecnológica", "Apoyo a la comunidad"]
+    },
+    "footer": {
+        "activities": {
+            "title": "Actividades",
+            "training": "Formación",
+            "research": "I+D",
+            "outreach": "Divulgación",
+            "transfer": "Transferencia"
+        },
+        "social": {
+            "title": "Social",
+            "discord": "Comunidad en Discord",
+            "github": "Repositorio en Github",
+            "twitter": "Cuenta de Twitter",
+            "instagram": "Postureo en Instagram"
+        },
+        "community": {
+            "title": "Comunidad",
+            "attributions": "Atribuciones"
+        },
+        "love": ["De Corunet con", "para la comunidad"]
+    },
+    "about_us": {
+        "view_more": "Ver más",
+        "title": ["Who are",
+                  "we?"],
+        "fic": {
+            "title": "Facultade de Informática",
+            "description": "Somos un centro de referencia en la formación de profesionales de la informática en Galicia, para el mundo."
+        },
+        "corunet": {
+            "title": "Corunet",
+            "description":["Somos percebeiras do código e xente sngular.",
+                "Desarrollamos software para la gestión de grandes volúmenes de datos y medios de pago."
+            ]
+        },
+        "udc": {
+            "title": "Universidade da Coruña",
+            "description": "En constante cambio. Con tres especialidades: Campus Industrial, Campus Sustentabilidade e Campus Innova. E moito máis..."
+        }
     }
 }

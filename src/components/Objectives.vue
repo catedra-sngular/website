@@ -45,52 +45,52 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .objectives {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
     padding: 0% 10%;
-}
 
-.objectives__title {
-    font-size: 60px;
-}
+    &__title {
+        font-size: 60px;
+    }
 
-.objectives__title > span {
-    color: rgb(109, 191, 162);
-    text-decoration: underline rgba(109, 191, 162, 0.6);
-}
+    &__title > span {
+        color: rgb(109, 191, 162);
+        text-decoration: underline rgba(109, 191, 162, 0.6);
+    }
 
-.objectives__list {
-    display: flex;
-    flex: row;
-    list-style: none;
-    gap: 2rem;
-}
+    &__list {
+        display: flex;
+        flex: row;
+        list-style: none;
+        gap: 2rem;
+    }
 
-.objectives__item {
-    text-align: center;
-}
+    &__item {
+        text-align: center;
+    }
 
-.objectives__item-number {
-    background-color: rgba(109, 191, 162, 0.6);
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 1rem;
-}
+    &__item-number {
+        background-color: rgba(109, 191, 162, 0.6);
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 1rem;
+    }
 
-.objectives__item-title {
-    font-size: 25px;
-}
+    &__item-title {
+        font-size: 25px;
+    }
 
-.objectives__item-description {
-    color: var(--el-text-color-secondary);
-    font-size: 16px;
+    &__item-description {
+        color: var(--el-text-color-secondary);
+        font-size: 16px;
+    }
 }
 </style>
