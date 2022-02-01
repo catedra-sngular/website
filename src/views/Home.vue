@@ -1,9 +1,9 @@
 <template>
     <el-main>
         <hero />
+        <about-us />
         <objectives-carousel />
         <activities />
-        <about-us />
     </el-main>
 </template>
 
@@ -17,7 +17,7 @@ import AboutUs from '@/components/AboutUs.vue'
 
 export default defineComponent({
     name: 'Home',
-    components: { ElMain, Hero, ObjectivesCarousel, Activities, AboutUs },
+    components: { ElMain, Hero, AboutUs, ObjectivesCarousel, Activities },
 })
 </script>
 
