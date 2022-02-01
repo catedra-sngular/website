@@ -148,11 +148,10 @@ export default {
             height: 570px;
             z-index: 100;
             /* transition: 0.6s ease; */
-            transition: 4s;
+            transition: 1s ease;
 
             &:hover {
-                /* transform: rotate(6deg); */
-                transform: rotate(1440deg);
+                transform: rotate(10deg);
                 height: 610px;
             }
         }
