@@ -1,9 +1,14 @@
 <template>
     <section class="objectives" id="objetivos">
         <div class="background-img"></div>
-        <h1 class="objectives__title">
-            {{ locale.objectives.title }}
-        </h1>
+        <div class="ei">
+            <h1 class="objectives__title">
+                {{ locale.objectives.title[0] }}
+            </h1>
+            <h1 class="objectives__title-highlight">
+                {{ locale.objectives.title[1] }}
+            </h1>
+        </div>
         <div class="objectives__carousel">
             <el-carousel :interval="5000" type="card" height="300px">
                 <el-carousel-item class="objectives__item__galicia">
@@ -98,6 +103,10 @@ export default {
 <style lang="scss">
 @import '@/styles/styles.scss';
 
+.ei {
+    display: flex;
+}
+
 .el-carousel__item--card {
     border-radius: 18px;
 }
@@ -111,7 +120,9 @@ export default {
     font-family: 'Montserrat', sans-serif;
     color: var(--el-text-color-primary);
     padding: 0% 10%;
-    background: white;
+    background-image: url('../../public/assets/images/torre.png');
+    background-position: center;
+    background-size: cover;
 
     &__title {
         font-size: 60px;
@@ -120,9 +131,20 @@ export default {
         margin-bottom: 150px;
         font-weight: 900;
         transition: 0.4s ease;
+    }
 
+    &__title-highlight {
+        font-size: 60px;
+        color: $green;
+        z-index: 1;
+        margin-bottom: 150px;
+        text-shadow: 1px 1px 2px rgb(82, 82, 82);
+        margin-left: 20px;
+        font-weight: 900;
+        transition: 0.4s ease;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
+            margin-left: 36px;
         }
     }
 
@@ -133,10 +155,10 @@ export default {
             background-color: $darkpurple;
         }
         &__transfer {
-            background-color: $green;
+            background-color: $lightpurple;
         }
         &__open-science {
-            background-color: $lightpurple;
+            background-color: $green;
         }
         &__software {
             background-color: $orange;
@@ -205,10 +227,10 @@ export default {
                 font-size: 12px;
             }
             &__transfer {
-                background-color: $green;
+                background-color: $lightpurple;
             }
             &__open-science {
-                background-color: $lightpurple;
+                background-color: $green;
             }
             &__software {
                 background-color: $orange;
