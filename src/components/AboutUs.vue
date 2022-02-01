@@ -1,7 +1,13 @@
 <template>
     <section class="about-us" id="about-us">
-        <h1 class="about-us__title">¿Quienes <span class="about-us__title--second">somos?</span></h1>
-
+        <div class="ei">
+            <h1 class="about-us__title">
+                {{ locale.about_us.title[0] }}
+            </h1>
+            <h1 class="about-us__title-highlight">
+                {{ locale.about_us.title[1] }}
+            </h1>
+        </div>
         <div class="about-us__cards">
             <div class="about-us__cards--card-wrap">
                 <div class="about-us__cards--card-box">
@@ -11,12 +17,14 @@
                         </div>
                     </div>
                     <div class="about-us__cards--text">
-                        <h3 class="about-us__cards--text-title">Corunet</h3>
+                        <h3 class="about-us__cards--text-title">{{ locale.about_us.corunet.title }}</h3>
                         <p class="about-us__cards--text-description">
-                            Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
-                            grandes empresas.
+                            {{ locale.about_us.corunet.description[0] }}
+                            {{ locale.about_us.corunet.description[1] }}
                         </p>
-                        <a class="about-us__cards--link" href="https://coru.net/" target="_blank">Ver más</a>
+                        <a class="about-us__cards--link" href="https://coru.net/" target="_blank">
+                            {{ locale.about_us.view_more }}
+                        </a>
                         <a href=""></a>
                     </div>
                 </div>
@@ -30,12 +38,13 @@
                         </div>
                     </div>
                     <div class="about-us__cards--text">
-                        <h3 class="about-us__cards--text-title">Universidade da Coruña</h3>
+                        <h3 class="about-us__cards--text-title">{{ locale.about_us.udc.title }}</h3>
                         <p class="about-us__cards--text-description">
-                            Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
-                            grandes empresas.
+                            {{ locale.about_us.udc.description }}
                         </p>
-                        <a class="about-us__cards--link" href="https://www.udc.es/" target="_blank">Ver más</a>
+                        <a class="about-us__cards--link" href="https://www.udc.es/" target="_blank">
+                            {{ locale.about_us.view_more }}
+                        </a>
                         <a href=""></a>
                     </div>
                 </div>
@@ -49,12 +58,13 @@
                         </div>
                     </div>
                     <div class="about-us__cards--text">
-                        <h3 class="about-us__cards--text-title">Facultade de Informática</h3>
+                        <h3 class="about-us__cards--text-title">{{ locale.about_us.fic.title }}</h3>
                         <p class="about-us__cards--text-description">
-                            Corunet es una empresa de A Coruña que se dedica a desarrollar soluciones tecnológicas para
-                            grandes empresas.
+                            {{ locale.about_us.fic.description }}
                         </p>
-                        <a class="about-us__cards--link" href="https://www.fic.udc.es/" target="_blank">Ver más</a>
+                        <a class="about-us__cards--link" href="https://www.fic.udc.es/" target="_blank">
+                            {{ locale.about_us.view_more }}
+                        </a>
                         <a href=""></a>
                     </div>
                 </div>
@@ -121,6 +131,10 @@ export default {
 <style lang="scss">
 @import '@/styles/styles.scss';
 
+.ei {
+    display: flex;
+}
+
 .about-us {
     height: 100vh;
     display: flex;
@@ -129,9 +143,7 @@ export default {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    background-image: url('../../public/assets/images/pic5test.jpg');
-    background-position: center;
-    background-size: cover;
+    background: $grey-background;
 
     &__title {
         font-size: 60px;
@@ -141,13 +153,21 @@ export default {
         margin-top: 30px;
         font-weight: 900;
         transition: 0.4s ease;
+    }
 
-        &--second {
-            color: $darkpurple;
-        }
-
+    &__title-highlight {
+        font-size: 60px;
+        color: $darkpurple;
+        z-index: 1;
+        margin-bottom: 80px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-weight: 900;
+        transition: 0.4s ease;
+        text-shadow: 1px 1px 2px rgb(82, 82, 82);
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
+            margin-left: 36px;
         }
     }
 
