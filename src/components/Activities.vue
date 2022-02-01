@@ -117,15 +117,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/styles/styles.scss';
 .activities {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    background: #ffffff;
+    background: $grey-background;
     position: relative;
-    /* background-image: url('../../public/assets/images/pic2test.jpeg'); */
     height: 100vh;
 
     &__image {
@@ -168,7 +168,7 @@ export default {
             margin-top: -30px;
             color: rgba(236, 99, 40, 1);
             transition: 0.4s ease;
-
+            text-shadow: 1px 1px 2px rgb(82, 82, 82);
             &:hover {
                 transform: scale(1.1);
                 margin-left: 30px;
