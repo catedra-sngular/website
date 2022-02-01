@@ -5,9 +5,9 @@
         </div>
         <div class="header__navigation">
             <div class="header__navigation--links">
+                <el-link :underline="false" href="/#about-us">{{ locale.navbar.about_us }}</el-link>
                 <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
                 <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
-                <el-link :underline="false" href="/#about-us">{{ locale.navbar.moreInfo }}</el-link>
             </div>
 
             <div class="header__navigation--icons">
@@ -16,6 +16,12 @@
                 </el-link>
                 <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
                     <img class="header__navigation--icon" src="/assets/icons/discord-icon.svg" />
+                </el-link>
+                <el-link :underline="false" href="https://twitter.com/CatedraCicas" target="_blank">
+                    <img class="header__navigation--icon" src="/assets/icons/twitter-icon.svg" />
+                </el-link>
+                <el-link :underline="false" href="https://www.instagram.com/catedracicas/" target="_blank">
+                    <img class="header__navigation--icon" src="/assets/icons/instagram-icon.svg" />
                 </el-link>
             </div>
 
