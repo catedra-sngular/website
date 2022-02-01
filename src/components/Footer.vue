@@ -40,12 +40,12 @@
                         }}</el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="https://twitter.com/corunet">{{
+                        <el-link :underline="false" href="https://twitter.com/CatedraCicas">{{
                             locale.footer.social.twitter
                         }}</el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="https://www.instagram.com/hola.corunet/">{{
+                        <el-link :underline="false" href="https://www.instagram.com/catedracicas/">{{
                             locale.footer.social.instagram
                         }}</el-link>
                     </el-row>
