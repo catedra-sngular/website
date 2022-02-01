@@ -28,7 +28,7 @@
         ],
         "local_impact": {
             "title": "From A Coruña to the world",
-            "description": "Contibuting to a community more global, plural, and equal than ever from our Atlantic corner"
+            "description": "Contibuting to a more global, plural, and equalitarian community from our Atlantic corner"
         },
         "technology_transfer": {
             "title": "Boosting transfer",
@@ -95,18 +95,18 @@
                   "we?"],
         "view_more": "View more",
         "fic": {
-            "title": "Facultade de Informática",
-            "description": "Somos un centro de referencia en la formación de profesionales de la informática en Galicia, para el mundo."
+            "title": "Computer Science Faculty",
+            "description": "We are a reference center in Galicia for research and training in computer science."
         },
         "corunet": {
             "title": "Corunet",
-            "description":["Somos percebeiras do código e xente sngular.",
-                           "Desarrollamos software para la gestión de grandes volúmenes de datos y medios de pago."
+            "description":["We are coding percebeiras and sngular people.",
+                           "We develop software for the management of large volumes of data and payment methods, with common sense."
             ]
         },
         "udc": {
-            "title": "Universidade da Coruña",
-            "description": "En constante cambio. Con tres especialidades: Campus Industrial, Campus Sustentabilidade e Campus Innova. E moito máis..."
+            "title": "University of A Coruña",
+            "description": "Under constant change. With three specialties: Industrial Campus, Sustainable Campus and Innova Campus. And much more..."
         }
     }
 }

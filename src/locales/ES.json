@@ -73,21 +73,21 @@
     },
     "about_us": {
         "view_more": "Ver más",
-        "title": ["Who are",
-                  "we?"],
+        "title": ["¿Quién está",
+                  "detrás?"],
         "fic": {
-            "title": "Facultade de Informática",
-            "description": "Somos un centro de referencia en la formación de profesionales de la informática en Galicia, para el mundo."
+            "title": "Facultad de Informática",
+            "description": "Somos un centro de referencia en investigación y formación de ingenier@s informátic@s en Galicia."
         },
         "corunet": {
             "title": "Corunet",
-            "description":["Somos percebeiras do código e xente sngular.",
-                "Desarrollamos software para la gestión de grandes volúmenes de datos y medios de pago."
+            "description":["Somos percebeiras do código y gente sngular.",
+                "Desarrollamos software para la gestión de grandes volúmenes de datos y medios de pago, con sentidiño."
             ]
         },
         "udc": {
-            "title": "Universidade da Coruña",
-            "description": "En constante cambio. Con tres especialidades: Campus Industrial, Campus Sustentabilidade e Campus Innova. E moito máis..."
+            "title": "Universidad de A Coruña",
+            "description": "En constante cambio. Con tres especialidades: Campus Industrial, Campus Sostenibilidad y Campus Innova. Y mucho más..."
         }
     }
 }
