@@ -55,8 +55,13 @@
                         <span class="footer__title">{{ locale.footer.community.title }}</span>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="/#atribuciones">
+                        <el-link :underline="false" href="/attributions">
                             {{ locale.footer.community.attributions }}
+                        </el-link>
+                    </el-row>
+                    <el-row>
+                        <el-link :underline="false" href="/contributions">
+                            {{ locale.footer.community.contributions }}
                         </el-link>
                     </el-row>
                 </el-col>

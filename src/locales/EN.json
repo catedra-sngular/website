@@ -83,7 +83,8 @@
         },
         "community": {
             "title": "Community",
-            "attributions": "Attributions"
+            "attributions": "Attributions",
+            "contributions": "Contributions"
         },
         "love": [
             "From Corunet with",
@@ -108,5 +109,67 @@
             "title": "University of A Coruña",
             "description": "Under constant change. With three specialties: Industrial Campus, Sustainable Campus and Innova Campus. And much more..."
         }
+    },
+    "contributions": {
+        "title": "Contributions",
+        "subtitle": "The chair organization thankfully acknowledges the contributions of the following individuals:",
+        "person": [
+            {
+                "name": "Carlos Pais",
+                "contribution": "Proposal review"
+            },
+            {
+                "name": "Cris Carrascal",
+                "contribution": "Scientific Piti"
+            },
+            {
+                "name": "Guille Gil",
+                "contribution": "Web design and layout"
+            },
+            {
+                "name": "Jorge Mayoral",
+                "contribution": "Web development"
+            },
+            {
+                "name": "Roger Blanco",
+                "contribution": "Web deployment"
+            },
+            {
+                "name": "Patri Ocando",
+                "contribution": "Design of the CICAS logo"
+            },
+            {
+                "name": "Rubén Molina",
+                "contribution": "Responsive web design"
+            },
+            {
+                "name": "Sabela Cereijo",
+                "contribution": "Content review"
+            }
+        ]
+    },
+    "attributions": {
+        "title": "Atribuciones",
+        "project": [{
+            "name": "Vue.js",
+            "contribution": "Frontend framework"
+        },
+        {
+            "name": "Node.js",
+            "contribution": "Execution environment"
+        },
+        {
+            "name": "Element+",
+            "contribution": "Components library"
+        },
+        {
+            "name": "Home background",
+            "contribution":["Photo", "created by", "freepik"]
+        },
+        {
+            "name": "Pic of the Tower of Hércules",
+            "contribution": ["Photo", "by", "Borre Design", "on", "Unsplash"]
+        }
+    ]
     }
 }
