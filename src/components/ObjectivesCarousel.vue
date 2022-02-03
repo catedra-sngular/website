@@ -200,19 +200,30 @@ export default {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1125px) {
     .objectives {
-        padding: 0% 10%;
+        padding: 20px 10px;
+        height: auto;
+        
+        .ei {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__title {
             font-size: 32px;
-            display: flex;
-            width: 110%;
-            gap: 0px;
-            margin-left: 15px;
-            margin-bottom: 100px;
-            margin-top: -100px;
+            text-align: center;
+            margin: 0;
             font-weight: 800;
+        }
+
+        &__title-highlight {
+            font-size: 32px;
+            margin:0;
+            &:hover {
+                transform: none;
+                margin: 0;
+            }
         }
 
         &__title > span {
@@ -238,7 +249,94 @@ export default {
         }
 
         &__carousel {
-            width: 120%;
+            padding-top: 40px;
+            width: 110%;
+        }
+
+        &__carousel-item {
+            text-align: center;
+        }
+
+        &__icon {
+            height: 18px;
+        }
+    }
+
+    .el-carousel__item {
+        & > h2 {
+            color: #ffffff;
+            font-size: 24px;
+            opacity: 0.9;
+            line-height: 36px;
+            height: auto;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+        }
+        & > p {
+            color: #ffffff;
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 26px;
+            height: auto;
+            margin: 0px;
+            padding: 20px;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .objectives {
+        padding: 20px 10px;
+        height: auto;
+        
+        .ei {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        &__title-highlight {
+            font-size: 32px;
+            margin:0;
+            &:hover {
+                transform: none;
+                margin: 0;
+            }
+        }
+
+        &__title > span {
+            color: $darkpurple;
+        }
+
+        &__item {
+            text-align: center;
+
+            &__galicia {
+                background-color: $darkpurple;
+                font-size: 12px;
+            }
+            &__transfer {
+                background-color: $lightpurple;
+            }
+            &__open-science {
+                background-color: $green;
+            }
+            &__software {
+                background-color: $orange;
+            }
+        }
+
+        &__carousel {
+            padding-top: 40px;
+            width: 110%;
         }
 
         &__carousel-item {

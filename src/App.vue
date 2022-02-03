@@ -30,6 +30,7 @@ export default {
     flex-direction: column;
     width: 100%;
     background: #f9f9f9;
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 600px) {

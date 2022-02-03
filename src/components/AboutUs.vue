@@ -304,18 +304,81 @@ export default {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1125px) {
     .about-us {
         height: auto;
 
+        .ei {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 10px;
+        }
+
         &__title {
-            font-size: 32px;
-            margin: 80px 0;
+            font-size: 36px;
+            margin: 0;
+            text-align: center;
 
             &--second {
                 color: $darkpurple;
             }
         }
+
+        &__title-highlight {
+            font-size: 38px;
+            margin:0;
+            &:hover {
+                transform: none;
+                margin: 0;
+            }
+        }
+
+         &__cards {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;
+            gap: 50px;
+            justify-content: center;
+            margin: auto;
+            width: 80%;
+            &--card-wrap {
+                width: 96%;
+            }
+        }
+    }   
+}
+
+@media only screen and (max-width: 640px) {
+    .about-us {
+        height: auto;
+
+        .ei {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin: 0;
+            text-align: center;
+
+            &--second {
+                color: $darkpurple;
+            }
+        }
+
+        &__title-highlight {
+            font-size: 32px;
+            margin:0;
+            &:hover {
+                transform: none;
+                margin: 0;
+            }
+        }
+
 
         &__cards {
             display: flex;
@@ -324,9 +387,8 @@ export default {
             gap: 50px;
 
             &--card-wrap {
-                width: 75%;
+                width: 95%;
                 height: 410px;
-                margin: 0 40px;
                 position: relative;
                 transition: all 0.6s ease-out;
             }
