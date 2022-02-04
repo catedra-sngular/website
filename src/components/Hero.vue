@@ -397,7 +397,7 @@ export default {
                 font-size: 14px;
                 line-height: 26px;
                 margin-bottom: 0px;
-                margin-top: -10px;
+                margin-top: -20px;
                 color: #222;
             }
 

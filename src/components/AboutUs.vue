@@ -342,6 +342,7 @@ export default {
             justify-content: center;
             margin: auto;
             width: 80%;
+            padding-bottom: 60px;
             &--card-wrap {
                 width: 96%;
             }
