@@ -207,8 +207,7 @@ export default {
             text-shadow: 1px 1px 2px rgb(82, 82, 82);
             font-size: 48px;
             line-height: 65px;
-            margin-bottom: 40px;
-            margin-left: 20px;
+            margin: -30px 0;
             transition: 0.4s ease-in-out;
 
             &:hover {
