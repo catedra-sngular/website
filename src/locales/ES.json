@@ -60,10 +60,10 @@
         },
         "social": {
             "title": "Social",
-            "discord": "Comunidad en Discord",
-            "github": "Repositorio en Github",
-            "twitter": "Cuenta de Twitter",
-            "instagram": "Postureo en Instagram"
+            "discord": "Discord",
+            "github": "Github",
+            "twitter": "Twitter",
+            "instagram": "Instagram"
         },
         "community": {
             "title": "Comunidad",

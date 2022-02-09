@@ -18,6 +18,7 @@ export default defineComponent({
 <style lang="scss">
 @import '@/styles/styles.scss';
 .el-main {
+    margin-top: 60px;
     padding: 0;
 }
 </style>

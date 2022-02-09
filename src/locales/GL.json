@@ -76,10 +76,10 @@
         },
         "social": {
             "title": "Social",
-            "discord": "Comunidade en Discord",
-            "github": "Repositorio en Github",
-            "twitter": "Conta de Twitter",
-            "instagram": "Postureo en Instagram"
+            "discord": "Discord",
+            "github": "Github",
+            "twitter": "Twitter",
+            "instagram": "Instagram"
         },
         "community": {
             "title": "Comunidade",

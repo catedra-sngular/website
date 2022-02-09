@@ -241,7 +241,132 @@ export default {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1460px) {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    .activities {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        background: #ffffff;
+        position: relative;
+        background-image: url('../../public/assets/images/pic2test.jpeg');
+        height: 100vh;
+
+        &__image {
+            &--circle1 img {
+                /*verde*/
+                z-index: 0;
+                height: 150px;
+                position: absolute;
+                top: 130px;
+                right: 550px;
+                margin: auto;
+            }
+
+            &--blob1 img {
+                z-index: 0;
+                height: 380px;
+                position: absolute;
+                bottom: -100px;
+                right: 0px;
+                margin: auto;
+            }
+        }
+
+        &__text {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            padding: 40px;
+            width: 100%;
+
+            &--title {
+                font-size: 48px;
+                width: 100%;
+                line-height: 50px;
+                margin: 32px 0px;
+            }
+
+            &--title-impact {
+                font-size: 52px;
+                font-weight: 800;
+                margin-top: -30px;
+                color: rgba(236, 99, 40, 1);
+
+                &:hover {
+                    color: rgba(236, 99, 40, 0.8);
+                }
+            }
+
+            &--subtitle {
+                color: #222;
+                font-size: 20px;
+                line-height: 26px;
+                width: 90%;
+                text-align: justify;
+                margin-top: 20px;
+            }
+
+            &--description {
+                color: #222;
+                font-size: 20px;
+                line-height: 26px;
+                width: 90%;
+                text-align: justify;
+                margin-top: 0px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            width: 100%;
+            height: 50px;
+            left: 0;
+            top: 120px;
+            position: relative;
+            z-index: 100;
+
+            &--item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: rgb(37, 25, 19);
+                padding: 1rem;
+                border-radius: 12px;
+                width: 80%;
+                margin: auto;
+                box-shadow: 0px 0px 4px rgb(230, 230, 230);
+
+                &:hover {
+                    background-color: rgb(221, 113, 66);
+                }
+            }
+
+            &--item-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                color: white;
+                font-size: 14px;
+            }
+
+            &--item-number {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
     .activities {
         display: flex;
         flex-direction: row;
@@ -319,14 +444,16 @@ export default {
         }
 
         &__list {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             gap: 1.5rem;
-            column-gap: 2rem;
-            width: 60%;
+            width: 100%;
             height: 50px;
-            left: 40px;
-            margin-top: 80px;
+            left: 0;
+            top: 120px;
+            position: relative;
+            z-index: 100;
 
             &--item {
                 display: flex;
@@ -335,7 +462,8 @@ export default {
                 background-color: rgb(37, 25, 19);
                 padding: 1rem;
                 border-radius: 12px;
-                width: 90%;
+                width: 80%;
+                margin: auto;
                 box-shadow: 0px 0px 4px rgb(230, 230, 230);
 
                 &:hover {
