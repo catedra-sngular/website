@@ -1,4 +1,5 @@
-# catedra-fic
+# Website da cátedra CICAS
+## Cátedra Corunet polo Impulso da Ciencia Aberta a través do Software
 
 ## Project setup
 
