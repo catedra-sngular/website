@@ -1,24 +1,39 @@
+<!--
+Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+                   a través do Software
+
+This program is free software: you can redistribute it and/or modify it 
+under the terms of the GNU General Public License as published by the Free 
+Software Foundation, either version 3 of the License, or (at your option) 
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with 
+this program. If not, see <https://www.gnu.org/licenses/>. 
+-->
+
 <template>
     <div class="hero">
-            <div class="hero__image">
-                    <div class="hero__image--piti">
-                        <img src="/assets/images/sciencepitica.png" />
-                    </div>
-
-                <div class="hero__image--blob1">
-                    <img src="/assets/images/blobpurple.png" />
-                </div>
-                <div class="hero__image--blob1">
-                    <img src="/assets/images/bloblightpurple.png" />
-                </div>
-
-                <div class="hero__image--circle1">
-                    <img src="/assets/images/circlelightpurple.png" />
-                </div>
+        <div class="hero__image">
+            <div class="hero__image--piti">
+                <img src="/assets/images/sciencepitica.png" />
             </div>
 
+            <div class="hero__image--blob1">
+                <img src="/assets/images/blobpurple.png" />
+            </div>
+            <div class="hero__image--blob1">
+                <img src="/assets/images/bloblightpurple.png" />
+            </div>
 
-            
+            <div class="hero__image--circle1">
+                <img src="/assets/images/circlelightpurple.png" />
+            </div>
+        </div>
+
         <div class="hero__text">
             <div class="hero__text--title">
                 <h2 class="hero__text--title-main">{{ locale.hero.title[0] }}</h2>
@@ -262,10 +277,10 @@ export default {
 
 @media only screen and (max-width: 1125px) {
     h2 {
-        margin:0;
+        margin: 0;
         padding: 0;
     }
-    
+
     .hero {
         flex-direction: column;
 
@@ -314,19 +329,16 @@ export default {
 
             &--title-software {
                 font-weight: 800;
-                margin:10px 0 40px 0;
+                margin: 10px 0 40px 0;
                 line-height: 32px;
             }
         }
     }
-
-
 }
 
 @media only screen and (max-width: 640px) {
-
     h2 {
-        margin:0;
+        margin: 0;
         padding: 0;
     }
     .hero {
@@ -382,7 +394,7 @@ export default {
             &--title-software {
                 font-size: 32px;
                 font-weight: 800;
-                margin:0 0 40px 0;
+                margin: 0 0 40px 0;
                 line-height: 32px;
             }
 
