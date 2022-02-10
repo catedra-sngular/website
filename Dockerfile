@@ -1,11 +1,9 @@
-FROM node:16-alpine
-
+FROM node:16.13.0 as build-stage
 WORKDIR /app
-COPY package.json /app
-RUN npm install 
+COPY package*.json ./
+RUN npm install
+COPY ./ .
+RUN npm run build
 
-COPY . /app
-
-EXPOSE 8080
-
-CMD ["npm", "run", "serve"]
+FROM nginx as production-stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
