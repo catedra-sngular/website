@@ -1,0 +1,175 @@
+{
+    "navbar": {
+        "objectives": "What is this for?",
+        "activities": "What will we be doing?",
+        "about_us": "Who are we?"
+    },
+    "hero": {
+        "title": [
+            "Let's boost",
+            "open science",
+            "through",
+            "software"
+        ],
+        "description": "With the CICAS chair, the Faculty of Computer Science of A Coruña and Corunet work together to promote",
+        "items": [
+            "Technological training",
+            "Quality software",
+            "An open community",
+            "R&D outreach",
+            "Transfer to society",
+            "Industry 4.0"
+        ]
+    },
+    "objectives": {
+        "title": [
+            "Our",
+            "objectives"
+        ],
+        "local_impact": {
+            "title": "From A Coruña to the world",
+            "description": "Contibuting to a more global, plural, and equalitarian community from our Atlantic corner"
+        },
+        "technology_transfer": {
+            "title": "Boosting transfer",
+            "description": "Promoting an effective transfer to society of the software used in research"
+        },
+        "open_science": {
+            "title": "Supporting Open Science",
+            "description": "Encouraging universal access to science and fostering collaboration between communities"
+        },
+        "software": {
+            "title": [
+                "R&D",
+                "Software"
+            ],
+            "description": "Highlighting the importance of quality software to drive research, development and innovation"
+        }
+    },
+    "activities": {
+        "title": [
+            "We want to have a",
+            "real impact"
+        ],
+        "subtitle": "by carrying out training and innovative activities, providing support to the community, encouraging outreach...",
+        "description": [
+            "In our",
+            "Twitter account",
+            "and in our",
+            "Github repo",
+            "you will openly find all of the information regarding our activities and projects."
+        ],
+         "kind": [
+            "Training workshops",
+            "R&D support",
+            "Technology outreach",
+            "Community support"
+         ]
+    },
+    "footer": {
+        "activities": {
+            "title": "Activities",
+            "training": "Training",
+            "research": "R&D",
+            "outreach": "Outreach",
+            "transfer": "Transfer"
+        },
+        "social": {
+            "title": "Social",
+            "discord": "Discord",
+            "github": "Github",
+            "twitter": "Twitter",
+            "instagram": "Instagram"
+        },
+        "community": {
+            "title": "Community",
+            "attributions": "Attributions",
+            "contributions": "Contributions"
+        },
+        "love": [
+            "From Corunet with",
+            "to our community"
+        ]
+    },
+    "about_us": {
+        "title": ["Who are",
+                  "we?"],
+        "view_more": "View more",
+        "fic": {
+            "title": "Computer Science Faculty",
+            "description": "We are a reference center in Galicia for research and training in computer science."
+        },
+        "corunet": {
+            "title": "Corunet",
+            "description":["We are coding percebeiras and sngular people.",
+                           "We develop software for the management of large volumes of data and payment methods, with common sense."
+            ]
+        },
+        "udc": {
+            "title": "University of A Coruña",
+            "description": "Under constant change. With three specialties: Industrial Campus, Sustainable Campus and Innova Campus. And much more..."
+        }
+    },
+    "contributions": {
+        "title": "Contributions",
+        "subtitle": "The chair organization thankfully acknowledges the contributions of the following individuals:",
+        "person": [
+            {
+                "name": "Carlos Pais",
+                "contribution": "Proposal review"
+            },
+            {
+                "name": "Cris Carrascal",
+                "contribution": "Scientific Piti"
+            },
+            {
+                "name": "Guille Gil",
+                "contribution": "Web design and layout"
+            },
+            {
+                "name": "Jorge Mayoral",
+                "contribution": "Web development"
+            },
+            {
+                "name": "Roger Blanco",
+                "contribution": "Web deployment"
+            },
+            {
+                "name": "Patri Ocando",
+                "contribution": "Design of the CICAS logo"
+            },
+            {
+                "name": "Rubén Molina",
+                "contribution": "Responsive web design"
+            },
+            {
+                "name": "Sabela Cereijo",
+                "contribution": "Content review"
+            }
+        ]
+    },
+    "attributions": {
+        "title": "Atribuciones",
+        "project": [{
+            "name": "Vue.js",
+            "contribution": "Frontend framework"
+        },
+        {
+            "name": "Node.js",
+            "contribution": "Execution environment"
+        },
+        {
+            "name": "Element+",
+            "contribution": "Components library"
+        },
+        {
+            "name": "Home background",
+            "contribution":["Photo", "created by", "freepik"]
+        },
+        {
+            "name": "Pic of the Tower of Hércules",
+            "contribution": ["Photo", "by", "Borre Design", "on", "Unsplash"]
+        }
+    ]
+    }
+}

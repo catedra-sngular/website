@@ -1,0 +1,175 @@
+{
+    "navbar": {
+        "objectives": "¿Para qué e isto?",
+        "activities": "¿Qué imos facer?",
+        "about_us": "¿Quén somos?"
+    },
+    "hero": {
+        "title": [
+            "Un impulso á",
+            "ciencia aberta",
+            "a través do",
+            "software"
+        ],
+        "description": "Coa cátedra CICAS, a Facultade de Informática da Coruña e Corunet colaboramos para promover",
+        "items": [
+            "A formación tecnolóxica",
+            "O software de calidade",
+            "Unha comunidade aberta",
+            "A divulgación da I+D",
+            "A transferencia á sociedade",
+            "A industria 4.0"
+        ]
+    },
+    "objectives": {
+        "title": [
+            "Os nosos ",
+            "obxectivos"
+        ],
+        "local_impact": {
+            "title": "Da Coruña para o mundo",
+            "description": "Desde a nosa esquiniña atlántica, intentamos contribuir a formar unha comunidade cada vez máis global, plural e igualitaria"
+        },
+        "technology_transfer": {
+            "title": "Impulsando a transferencia",
+            "description": "Buscamos promover a transferencia efectiva á sociedade do software empleado na investigación"
+        },
+        "open_science": {
+            "title": "Apostando pola Ciencia Aberta",
+            "description": "Queremos potenciar o acceso universal á ciencia e fomentar a colaboración entre comunidades"
+        },
+        "software": {
+            "title": [
+                "I+D",
+                "Software"
+            ],
+            "description": "Cremos na importancia do bo software para impulsar a investigación, o desenvolvemento e a innovación"
+        }
+    },
+    "activities": {
+        "title": [
+            "Queremos ter un",
+            "impacto real"
+        ],
+        "subtitle": "e para iso realizaremos actividades formativas e innovadoras, de promoción e soporte á comunidade, de divulgación...",
+        "description": [
+            "Na nosa",
+            "conta de Twitter",
+            "e no",
+            "repositorio de Github",
+            "encontrarás de manera aberta todas as actividades e proxectos que levemos a cabo."
+        ],
+         "kind": [
+            "Obradoiros de formación",
+            "Soporte á I+D",
+            "Divulgación tecnolóxica",
+            "Apoio á comunidade"
+         ]
+    },
+    "footer": {
+        "activities": {
+            "title": "Actividades",
+            "training": "Formación",
+            "research": "I+D",
+            "outreach": "Divulgación",
+            "transfer": "Transferencia"
+        },
+        "social": {
+            "title": "Social",
+            "discord": "Discord",
+            "github": "Github",
+            "twitter": "Twitter",
+            "instagram": "Instagram"
+        },
+        "community": {
+            "title": "Comunidade",
+            "attributions": "Atribucións",
+            "contributions": "Contribucións"
+        },
+        "love": [
+            "De Corunet con",
+            "para a comunidade"
+        ]
+    },
+    "about_us": {
+        "title": ["E logho ti,",
+                  "¿de quén ves sendo?"],
+        "view_more": "Ver máis",
+        "fic": {
+            "title": "Facultade de Informática",
+            "description": "Somos un centro de referencia en investigación e formación de enxeñeir@s informátic@s en Galicia."
+        },
+        "corunet": {
+            "title": "Corunet",
+            "description":["Somos percebeiras do código e xente sngular.",
+                "Desenvolvemos software para a xestión de grandes volumes de datos e medios de pago, con sentidiño."
+            ]
+        },
+        "udc": {
+            "title": "Universidade da Coruña",
+            "description": "En constante cambio. Con tres especialidades: Campus Industrial, Campus Sustentabilidade e Campus Innova. E moito máis..."
+        }
+    },
+    "contributions": {
+        "title": "Contribucións",
+        "subtitle": "A organización da cátedra agradece enormemente as contribucións das siguientes persoas:",
+        "person": [
+            {
+                "name": "Carlos Pais",
+                "contribution": "Revisión da proposta"
+            },
+            {
+                "name": "Cris Carrascal",
+                "contribution": "Piti científica"
+            },
+            {
+                "name": "Guille Gil",
+                "contribution": "Deseño e maquetación da web"
+            },
+            {
+                "name": "Jorge Mayoral",
+                "contribution": "Desenvolvemento da web"
+            },
+            {
+                "name": "Roger Blanco",
+                "contribution": "Despregamento da web"
+            },
+            {
+                "name": "Patri Ocando",
+                "contribution": "Deseño do logo da cátedra CICAS"
+            },
+            {
+                "name": "Rubén Molina",
+                "contribution": "Deseño da web adaptable"
+            },
+            {
+                "name": "Sabela Cereijo",
+                "contribution": "Revisión de contido"
+            }
+        ]
+    },
+    "attributions": {
+        "title": "Atribucións",
+        "project": [{
+            "name": "Vue.js",
+            "contribution": "Framework de frontend"
+        },
+        {
+            "name": "Node.js",
+            "contribution": "Entorno de execución"
+        },
+        {
+            "name": "Element+",
+            "contribution": "Biblioteca de compoñentes"
+        },
+        {
+            "name": "Fondo da pantalla home",
+            "contribution":["Foto", "creada en", "freepik"]
+        },
+        {
+            "name": "Foto da Torre de Hércules",
+            "contribution": ["Foto", "de", "Borre Design", "en", "Unsplash"]
+        }
+    ]
+    }
+}
