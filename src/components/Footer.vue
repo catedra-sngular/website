@@ -182,6 +182,8 @@ export default {
         align-items: flex-start;
         gap: 10%;
         margin-bottom: 1rem;
+        margin-left: 0rem !important; // Overrides problem with the gutter property
+        margin-right: 0rem !important;
         line-height: 28px;
         padding: 0rem 6rem;
     }

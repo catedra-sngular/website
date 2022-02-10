@@ -17,31 +17,31 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
 <template>
     <div class="hero">
-        <div class="hero__image">
-            <div class="hero__image--piti">
-                <img src="/assets/images/sciencepitica.png" />
+            <div class="hero__image">
+                    <div class="hero__image--piti">
+                        <img src="/assets/images/sciencepitica.png" />
+                    </div>
+
+                <div class="hero__image--blob1">
+                    <img src="/assets/images/blobpurple.png" />
+                </div>
+                <div class="hero__image--blob1">
+                    <img src="/assets/images/bloblightpurple.png" />
+                </div>
+
+                <div class="hero__image--circle1">
+                    <img src="/assets/images/circlelightpurple.png" />
+                </div>
             </div>
 
-            <div class="hero__image--blob1">
-                <img src="/assets/images/blobpurple.png" />
-            </div>
-            <div class="hero__image--blob1">
-                <img src="/assets/images/bloblightpurple.png" />
-            </div>
 
-            <div class="hero__image--circle1">
-                <img src="/assets/images/circlelightpurple.png" />
-            </div>
-        </div>
-
+            
         <div class="hero__text">
             <div class="hero__text--title">
                 <h2 class="hero__text--title-main">{{ locale.hero.title[0] }}</h2>
                 <h2 class="hero__text--title-science">{{ locale.hero.title[1] }}</h2>
-                <div class="ei">
-                    <h2 class="hero__text--title-main">{{ locale.hero.title[2] }}</h2>
-                    <h2 class="hero__text--title-software">{{ locale.hero.title[3] }}</h2>
-                </div>
+                <h2 class="hero__text--title-main">{{ locale.hero.title[2] }}</h2>
+                <h2 class="hero__text--title-software">{{ locale.hero.title[3] }}</h2>
             </div>
             <div class="hero__text--description">
                 {{ locale.hero.description }}
@@ -49,32 +49,32 @@ this program. If not, see <https://www.gnu.org/licenses/>.
             <ul class="hero__text--list">
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[0] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[0] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[1] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[1] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[2] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[2] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[3] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[3] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[4] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[4] }}</li>
                 </div>
 
                 <div class="hero__text--list-item">
                     <span class="hero__text--check">✓</span>
-                    <li>{{ locale.hero.items[5] }}</li>
+                    <li class="nowrap">{{ locale.hero.items[5] }}</li>
                 </div>
             </ul>
         </div>
@@ -154,6 +154,10 @@ export default {
     background-size: cover;
     height: 100vh;
 
+    .nowrap {
+        white-space: nowrap;
+    }
+
     &__image {
         width: 40%;
 
@@ -220,8 +224,7 @@ export default {
             text-shadow: 1px 1px 2px rgb(82, 82, 82);
             font-size: 48px;
             line-height: 65px;
-            margin-bottom: 40px;
-            margin-left: 20px;
+            margin: -30px 0;
             transition: 0.4s ease-in-out;
 
             &:hover {
@@ -274,52 +277,130 @@ export default {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1125px) {
+    h2 {
+        margin:0;
+        padding: 0;
+    }
+    
     .hero {
-        height: calc(100vh - 62px);
+        flex-direction: column;
 
         &__image {
-            width: 40%;
-
             &--piti img {
                 position: absolute;
-                bottom: -360px; /**/
-                left: 115px;
+                top: 60px;
+                left: 40%;
                 margin: auto;
-                height: 250px;
-                z-index: 1;
+                height: 300px;
+                z-index: 100;
+
+                &:hover {
+                    height: 350px;
+                }
             }
 
             &--circle1 img {
                 position: absolute;
-                bottom: -120px; /**/
-                left: 270px;
+                top: 60px; /**/
+                left: 30%;
                 margin: auto;
                 height: 80px;
                 z-index: 1;
             }
 
             &--blob1 img {
-                height: 280px;
-                bottom: -360px;
-                left: 50px;
+                height: 250px;
+                top: 80px;
+                left: 35%;
             }
         }
 
         &__text {
+            width: 80%;
+            margin: 250px 40px 10px 40px;
+
+            &--title-main {
+                margin: 0;
+            }
+
+            &--title-science {
+                font-weight: 800;
+                margin: 0;
+            }
+
+            &--title-software {
+                font-weight: 800;
+                margin:10px 0 40px 0;
+                line-height: 32px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    h2 {
+        margin:0;
+        padding: 0;
+    }
+    .hero {
+        flex-direction: column;
+        &__image {
+            &--piti img {
+                position: absolute;
+                top: 60px;
+                left: 40%;
+                margin: auto;
+                height: 300px;
+                z-index: 100;
+
+                &:hover {
+                    height: 350px;
+                }
+            }
+
+            &--circle1 img {
+                position: absolute;
+                top: 60px; /**/
+                left: 30%;
+                margin: auto;
+                height: 80px;
+                z-index: 1;
+            }
+
+            &--blob1 img {
+                height: 250px;
+                top: 80px;
+                left: 35%;
+            }
+        }
+
+        &__text {
+            margin: 0;
             position: absolute;
-            left: 25px;
-            top: 20px;
+            left: 50px;
+            top: 360px;
             width: 90%;
+
+            &--title-main {
+                margin: 0;
+                font-size: 28px;
+            }
 
             &--title-science {
                 font-size: 32px;
                 font-weight: 800;
+                margin: 0;
             }
 
             &--title-software {
                 font-size: 32px;
                 font-weight: 800;
+                margin:0 0 40px 0;
+                line-height: 32px;
             }
 
             &--subtitle {
@@ -332,7 +413,7 @@ export default {
                 font-size: 14px;
                 line-height: 26px;
                 margin-bottom: 0px;
-                margin-top: -10px;
+                margin-top: -20px;
                 color: #222;
             }
 
@@ -341,6 +422,10 @@ export default {
                 line-height: 30px;
                 font-weight: 500;
                 font-size: 14px;
+            }
+
+            &--list-item {
+                white-space: nowrap;
             }
 
             &--check {

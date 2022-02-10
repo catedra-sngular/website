@@ -17,6 +17,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
 <template>
     <el-header>
+        <nav-icon></nav-icon>
         <div class="header__logo">
             <el-link :underline="false" href="/"><img class="header__logo" src="/assets/cicas-logo.svg" /></el-link>
         </div>
@@ -58,12 +59,13 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
 <script lang="ts">
 import { inject, ref, Ref } from 'vue'
+import NavIcon from './NavIcon.vue'
 import { ElHeader, ElLink, ElSelect, ElOption } from 'element-plus'
 import { ProvideLocaleKey, ProvideSetLanguageKey } from '@/providers/Language'
 
 export default {
     name: 'NavigationBar',
-    components: { ElHeader, ElLink, ElSelect, ElOption },
+    components: { ElHeader, ElLink, ElSelect, ElOption, NavIcon },
     setup(): {
         selectedLanguage: Ref<string>
         languageOptions: { value: string; label: string }[]
@@ -122,7 +124,7 @@ export default {
     align-items: center;
     width: 100%;
     height: 62px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background: $background;
     font-family: 'Montserrat', sans-serif;
@@ -149,7 +151,8 @@ export default {
 
 .header {
     &__logo {
-        height: 4rem;
+        z-index: -1;
+        height: 50px;
         margin-bottom: 4px;
     }
 
@@ -181,5 +184,14 @@ export default {
             height: 16px;
         }
     }
+}
+
+@media screen and (max-width: 1125px) {
+        .header__navigation {
+            display: none;
+        }
+        .header__logo {
+            margin: auto auto 8px auto;
+        }
 }
 </style>

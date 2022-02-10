@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  cicas-site:
+    container_name: cicas-site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cicas-site:latest
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - "8080:8080"
