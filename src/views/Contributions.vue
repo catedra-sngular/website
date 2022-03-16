@@ -8,10 +8,14 @@
 import { defineComponent } from 'vue'
 import { ElMain } from 'element-plus'
 import ContributionList from '@/components/community/ContributionList.vue'
+import { event } from 'vue-gtag'
 
 export default defineComponent({
     name: 'Contributions',
     components: { ElMain, ContributionList },
+    beforeMount(){
+        event('contribuciones', { method: 'Google' })
+    },
 })
 </script>
 
