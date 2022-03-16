@@ -30,8 +30,12 @@ import { ElContainer } from 'element-plus'
 import NavigationBar from './components/NavigationBar.vue'
 import Footer from './components/Footer.vue'
 import ProvideLanguage from './providers/Language'
+import { event } from 'vue-gtag'
 
 export default {
+    beforeMount(){
+        event('home-page', { method: 'Google' })
+    },
     components: {
         ElContainer,
         NavigationBar,

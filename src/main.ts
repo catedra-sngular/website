@@ -21,5 +21,8 @@ import 'element-plus/dist/index.css'
 import 'element-plus/theme-chalk/display.css'
 import App from './App.vue'
 import router from './router'
+import VueGtag from "vue-gtag"
 
-createApp(App).use(router).use(ElementPlus).mount('#app')
+createApp(App).use(router).use(VueGtag, {
+    config: { id: "G-HW88C0B3H8" }
+  }).use(ElementPlus).mount('#app')
