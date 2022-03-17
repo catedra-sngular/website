@@ -23,9 +23,9 @@ this program. If not, see <https://www.gnu.org/licenses/>.
         </div>
         <div class="header__navigation">
             <div class="header__navigation--links">
-                <el-link :underline="false" href="/#about-us">{{ locale.navbar.about_us }}</el-link>
-                <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
-                <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#about-us'">{{ locale.navbar.about_us }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#objetivos'">{{ locale.navbar.objectives }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#actividades'">{{ locale.navbar.activities }}</el-link>
             </div>
 
             <div class="header__navigation--icons">
