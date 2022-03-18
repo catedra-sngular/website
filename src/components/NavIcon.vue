@@ -21,13 +21,13 @@
                 </a>
             </li>
             <li>
-                <a class="menu__item" href="/#about-us">{{ locale.navbar.about_us }}</a>
+                <a class="menu__item" v-scroll-to="'#about-us'">{{ locale.navbar.about_us }}</a>
             </li>
             <li>
-                <a class="menu__item" href="/#objetivos">{{ locale.navbar.objectives }}</a>
+                <a class="menu__item" v-scroll-to="'#objetivos'">{{ locale.navbar.objectives }}</a>
             </li>
             <li>
-                <a class="menu__item" href="/#actividades">{{ locale.navbar.activities }}</a>
+                <a class="menu__item" v-scroll-to="'#actividades'">{{ locale.navbar.activities }}</a>
             </li>
             <li>
                 <a class="menu__item">
