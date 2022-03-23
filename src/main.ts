@@ -25,5 +25,5 @@ import VueGtag from 'vue-gtag'
 import VueScrollTo from 'vue-scrollto'
 
 createApp(App).use(router).use(VueGtag, {
-    config: { id: "G-HW88C0B3H8" }
+    config: { id: "G-09D4SRFSND" }
   }).use(ElementPlus).use(VueScrollTo).mount('#app')
