@@ -43,7 +43,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                 {{ locale.contributions.person[3].contribution }}
             </p>
             <p class="contributions__text--description">
-                <a href="https://github.com/RogerBlancoP" target="_blank">{{ locale.contributions.person[4].name }}:</a>
+                <a href="https://github.com/RogelioBlancoP" target="_blank">{{ locale.contributions.person[4].name }}:</a>
                 {{ locale.contributions.person[4].contribution }}
             </p>
             <p class="contributions__text--description">
