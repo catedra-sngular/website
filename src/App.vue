@@ -1,5 +1,5 @@
 <!--
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 

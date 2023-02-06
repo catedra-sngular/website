@@ -1,5 +1,5 @@
 <!--
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 
@@ -29,15 +29,15 @@ this program. If not, see <https://www.gnu.org/licenses/>.
             <div class="about-us__cards--card-wrap">
                 <div class="about-us__cards--card-box">
                     <div class="about-us__cards--image">
-                        <div class="about-us__cards--logo-corunet">
+                        <div class="about-us__cards--logo-sngular">
                             <img src="/assets/images/logoCORUNET.svg" />
                         </div>
                     </div>
                     <div class="about-us__cards--text">
-                        <h3 class="about-us__cards--text-title">{{ locale.about_us.corunet.title }}</h3>
+                        <h3 class="about-us__cards--text-title">{{ locale.about_us.sngular.title }}</h3>
                         <p class="about-us__cards--text-description">
-                            {{ locale.about_us.corunet.description[0] }}
-                            {{ locale.about_us.corunet.description[1] }}
+                            {{ locale.about_us.sngular.description[0] }}
+                            {{ locale.about_us.sngular.description[1] }}
                         </p>
                         <a class="about-us__cards--link" href="https://coru.net/" target="_blank">
                             {{ locale.about_us.view_more }}
@@ -231,7 +231,7 @@ export default {
             }
         }
 
-        &--logo-corunet img {
+        &--logo-sngular img {
             height: 260px;
             position: absolute;
             top: 0;
@@ -420,7 +420,7 @@ export default {
                 box-shadow: 2px 2px 6px rgb(180, 180, 180);
             }
 
-            &--logo-corunet img {
+            &--logo-sngular img {
                 height: 210px;
                 margin: 0px auto;
             }
