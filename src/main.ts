@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 
@@ -24,6 +24,11 @@ import router from './router'
 import VueGtag from 'vue-gtag'
 import VueScrollTo from 'vue-scrollto'
 
-createApp(App).use(router).use(VueGtag, {
-    config: { id: "G-09D4SRFSND" }
-  }).use(ElementPlus).use(VueScrollTo).mount('#app')
+createApp(App)
+    .use(router)
+    .use(VueGtag, {
+        config: { id: 'G-09D4SRFSND' },
+    })
+    .use(ElementPlus)
+    .use(VueScrollTo)
+    .mount('#app')

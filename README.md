@@ -1,5 +1,6 @@
 # Website da cátedra CICAS
-## Cátedra Corunet polo Impulso da Ciencia Aberta a través do Software
+
+## Cátedra Sngular polo Impulso da Ciencia Aberta a través do Software
 
 ## Project setup
 

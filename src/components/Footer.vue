@@ -1,5 +1,5 @@
 <!--
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 
@@ -52,7 +52,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                         }}</el-link>
                     </el-row>
                     <el-row>
-                        <el-link :underline="false" href="https://github.com/catedra-corunet">{{
+                        <el-link :underline="false" href="https://github.com/catedra-sngular">{{
                             locale.footer.social.github
                         }}</el-link>
                     </el-row>
