@@ -30,7 +30,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                 <div class="about-us__cards--card-box">
                     <div class="about-us__cards--image">
                         <div class="about-us__cards--logo-sngular">
-                            <img src="/assets/images/logoCORUNET.svg" />
+                            <img src="/assets/images/sngular-logo.svg" />
                         </div>
                     </div>
                     <div class="about-us__cards--text">
@@ -39,7 +39,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                             {{ locale.about_us.sngular.description[0] }}
                             {{ locale.about_us.sngular.description[1] }}
                         </p>
-                        <a class="about-us__cards--link" href="https://coru.net/" target="_blank">
+                        <a class="about-us__cards--link" href="https://sngular.com/" target="_blank">
                             {{ locale.about_us.view_more }}
                         </a>
                         <a href=""></a>

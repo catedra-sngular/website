@@ -32,7 +32,7 @@
             <li>
                 <a class="menu__item">
                     <div class="header__navigation--icons mobile">
-                        <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
+                        <el-link :underline="false" href="https://github.com/catedra-sngular" target="_blank">
                             <img class="header__navigation--icon" src="/assets/icons/github-icon.svg" />
                         </el-link>
                         <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
