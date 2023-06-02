@@ -131,26 +131,36 @@
     },
     "attributions": {
         "title": "Atribuciones",
-        "project": [{
-            "name": "Vue.js",
-            "contribution": "Framework de frontend"
-        },
-        {
-            "name": "Node.js",
-            "contribution": "Entorno de ejecución"
-        },
-        {
-            "name": "Element+",
-            "contribution": "Biblioteca de componentes"
-        },
-        {
-            "name": "Fondo de la pantalla home",
-            "contribution":["Foto", "creada en", "freepik"]
-        },
-        {
-            "name": "Foto de la Torre de Hércules",
-            "contribution": ["Foto", "de", "Borre Design", "en", "Unsplash"]
-        }
-    ]
+        "project": [
+            {
+                "name": "Vue.js",
+                "contribution": "Framework de frontend"
+            },
+            {
+                "name": "Node.js",
+                "contribution": "Entorno de ejecución"
+            },
+            {
+                "name": "Element+",
+                "contribution": "Biblioteca de componentes"
+            },
+            {
+                "name": "Fondo de la pantalla home",
+                "contribution":["Foto", "creada en", "freepik"]
+            },
+            {
+                "name": "Foto de la Torre de Hércules",
+                "contribution": ["Foto", "de", "Borre Design", "en", "Unsplash"]
+            }
+        ]
+    },
+    "trainings": {
+        "title": "Formación",
+        "subtitle": "RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS",
+        "description": "Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG doGrao en Enxeñaría Informática (GEI) ou do Grao en Ciencia e Enxeñaría de Datos (GECD) da Facultade de Informática da Universidade da Coruña.",
+        "preList": "A Cátedra CICAS concede as bolsas a:",
+        "postList": "Contra a presente resolución cabe reclamación nos dous días laborais seguintes da súa publicación na páxina web:",
+        "link": "https://catedra-cicas.udc.gal/"
+
     }
 }

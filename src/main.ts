@@ -21,5 +21,20 @@ import 'element-plus/dist/index.css'
 import 'element-plus/theme-chalk/display.css'
 import App from './App.vue'
 import router from './router'
+import VueGtag from 'vue-gtag'
+import VueScrollTo from 'vue-scrollto'
+import BootstrapVue3 from 'bootstrap-vue-3'
 
-createApp(App).use(router).use(ElementPlus).mount('#app')
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
+
+createApp(App)
+    .use(router)
+    .use(VueGtag, {
+        config: { id: 'G-09D4SRFSND' },
+    })
+    .use(ElementPlus)
+    .use(VueScrollTo)
+    .use(BootstrapVue3)
+    .mount('#app')
