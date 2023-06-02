@@ -21,18 +21,18 @@
                 </a>
             </li>
             <li>
-                <a class="menu__item" href="/#about-us">{{ locale.navbar.about_us }}</a>
+                <a class="menu__item" v-scroll-to="'#about-us'">{{ locale.navbar.about_us }}</a>
             </li>
             <li>
-                <a class="menu__item" href="/#objetivos">{{ locale.navbar.objectives }}</a>
+                <a class="menu__item" v-scroll-to="'#objetivos'">{{ locale.navbar.objectives }}</a>
             </li>
             <li>
-                <a class="menu__item" href="/#actividades">{{ locale.navbar.activities }}</a>
+                <a class="menu__item" v-scroll-to="'#actividades'">{{ locale.navbar.activities }}</a>
             </li>
             <li>
                 <a class="menu__item">
                     <div class="header__navigation--icons mobile">
-                        <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
+                        <el-link :underline="false" href="https://github.com/catedra-sngular" target="_blank">
                             <img class="header__navigation--icon" src="/assets/icons/github-icon.svg" />
                         </el-link>
                         <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">

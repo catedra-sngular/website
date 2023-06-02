@@ -11,7 +11,7 @@
             "through",
             "software"
         ],
-        "description": "With the CICAS chair, the Faculty of Computer Science of A Coruña and Corunet work together to promote",
+        "description": "With the CICAS chair, the Faculty of Computer Science of A Coruña and Sngular work together to promote",
         "items": [
             "Technological training",
             "Quality software",
@@ -87,7 +87,7 @@
             "contributions": "Contributions"
         },
         "love": [
-            "From Corunet with",
+            "From Sngular with",
             "to our community"
         ]
     },
@@ -99,10 +99,10 @@
             "title": "Computer Science Faculty",
             "description": "We are a reference center in Galicia for research and training in computer science."
         },
-        "corunet": {
-            "title": "Corunet",
+        "sngular": {
+            "title": "Sngular",
             "description":["We are coding percebeiras and sngular people.",
-                           "We develop software for the management of large volumes of data and payment methods, with common sense."
+                "We are an ecosystem that combines agility, talent and tecnology to solve the obstacles that are yet to come."
             ]
         },
         "udc": {
@@ -131,7 +131,7 @@
                 "contribution": "Web development"
             },
             {
-                "name": "Roger Blanco",
+                "name": "Rogelio Blanco",
                 "contribution": "Web deployment"
             },
             {

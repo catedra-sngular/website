@@ -1,4 +1,6 @@
-# catedra-fic
+# Website da cátedra CICAS
+
+## Cátedra Sngular polo Impulso da Ciencia Aberta a través do Software
 
 ## Project setup
 

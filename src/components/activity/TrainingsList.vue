@@ -26,7 +26,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                     {{ concept.description}}
                 </p>
             </div>
-            <div v-for="card in concept.cards" class="container">
+            <div v-for="card in concept.cards"  :key="card.id" class="container">
                 <div class="card bg-light">
                     <div class="card-header"><h5 class="card-title">{{ card.cardTitle }}</h5></div>
                     <div class="card-body">

@@ -11,7 +11,7 @@
             "a través do",
             "software"
         ],
-        "description": "Coa cátedra CICAS, a Facultade de Informática da Coruña e Corunet colaboramos para promover",
+        "description": "Coa cátedra CICAS, a Facultade de Informática da Coruña e Sngular colaboramos para promover",
         "items": [
             "A formación tecnolóxica",
             "O software de calidade",
@@ -87,7 +87,7 @@
             "contributions": "Contribucións"
         },
         "love": [
-            "De Corunet con",
+            "De Sngular con",
             "para a comunidade"
         ]
     },
@@ -99,10 +99,10 @@
             "title": "Facultade de Informática",
             "description": "Somos un centro de referencia en investigación e formación de enxeñeir@s informátic@s en Galicia."
         },
-        "corunet": {
-            "title": "Corunet",
+        "sngular": {
+            "title": "Sngular",
             "description":["Somos percebeiras do código e xente sngular.",
-                "Desenvolvemos software para a xestión de grandes volumes de datos e medios de pago, con sentidiño."
+                "Somos un ecosistema que combina axilidade, talento e tecnoloxía para resolver os retos que están por chegar."
             ]
         },
         "udc": {
@@ -131,7 +131,7 @@
                 "contribution": "Desenvolvemento da web"
             },
             {
-                "name": "Roger Blanco",
+                "name": "Rogelio Blanco",
                 "contribution": "Despregamento da web"
             },
             {

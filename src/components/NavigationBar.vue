@@ -1,5 +1,5 @@
 <!--
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 
@@ -19,17 +19,17 @@ this program. If not, see <https://www.gnu.org/licenses/>.
     <el-header>
         <nav-icon></nav-icon>
         <div class="header__logo">
-            <el-link :underline="false" href="/"><img class="header__logo" src="/assets/cicas-logo.svg" /></el-link>
+            <el-link :underline="false" href="/"><img class="header__logo" src="/assets/cicas-logo.png" /></el-link>
         </div>
         <div class="header__navigation">
             <div class="header__navigation--links">
-                <el-link :underline="false" href="/#about-us">{{ locale.navbar.about_us }}</el-link>
-                <el-link :underline="false" href="/#objetivos">{{ locale.navbar.objectives }}</el-link>
-                <el-link :underline="false" href="/#actividades">{{ locale.navbar.activities }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#about-us'">{{ locale.navbar.about_us }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#objetivos'">{{ locale.navbar.objectives }}</el-link>
+                <el-link :underline="false" v-scroll-to="'#actividades'">{{ locale.navbar.activities }}</el-link>
             </div>
 
             <div class="header__navigation--icons">
-                <el-link :underline="false" href="https://github.com/catedra-corunet" target="_blank">
+                <el-link :underline="false" href="https://github.com/catedra-sngular" target="_blank">
                     <img class="header__navigation--icon" src="/assets/icons/github-icon.svg" />
                 </el-link>
                 <el-link :underline="false" href="https://discord.gg/ZCs9qenvMf" target="_blank">
@@ -45,12 +45,8 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
             <div class="header__navigation--language-select">
                 <el-select v-model="selectedLanguage" class="m-2" placeholder="Idioma" @change="setLanguage">
-                    <el-option
-                        v-for="item in languageOptions"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value"
-                    ></el-option>
+                    <el-option v-for="item in languageOptions" :key="item.value" :label="item.label"
+                        :value="item.value"></el-option>
                 </el-select>
             </div>
         </div>
@@ -116,6 +112,7 @@ export default {
 
 <style lang="scss">
 @import '@/styles/styles.scss';
+
 .el-header {
     --el-header-padding: 0 32px;
     display: flex;
@@ -187,11 +184,12 @@ export default {
 }
 
 @media screen and (max-width: 1125px) {
-        .header__navigation {
-            display: none;
-        }
-        .header__logo {
-            margin: auto auto 8px auto;
-        }
+    .header__navigation {
+        display: none;
+    }
+
+    .header__logo {
+        margin: auto auto 8px auto;
+    }
 }
 </style>

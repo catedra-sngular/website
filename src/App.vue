@@ -1,5 +1,5 @@
 <!--
-Copyright (C) 2022 Catedra Corunet polo Impulso da Ciencia Aberta
+Copyright (C) 2022 Catedra Sngular polo Impulso da Ciencia Aberta
                    a través do Software
 
 This program is free software: you can redistribute it and/or modify it 
@@ -30,8 +30,12 @@ import { ElContainer } from 'element-plus'
 import NavigationBar from './components/NavigationBar.vue'
 import Footer from './components/Footer.vue'
 import ProvideLanguage from './providers/Language'
+import { event } from 'vue-gtag'
 
 export default {
+    beforeMount(){
+        event('home-page', { method: 'Google' })
+    },
     components: {
         ElContainer,
         NavigationBar,
