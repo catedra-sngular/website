@@ -23,6 +23,11 @@ import App from './App.vue'
 import router from './router'
 import VueGtag from 'vue-gtag'
 import VueScrollTo from 'vue-scrollto'
+import BootstrapVue3 from 'bootstrap-vue-3'
+
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
 createApp(App)
     .use(router)
@@ -31,4 +36,5 @@ createApp(App)
     })
     .use(ElementPlus)
     .use(VueScrollTo)
+    .use(BootstrapVue3)
     .mount('#app')

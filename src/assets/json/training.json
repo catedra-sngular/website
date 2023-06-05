@@ -1,0 +1,44 @@
+{
+   "trainings":{
+      "title":"Formación",
+      "description":"",
+      "cards":[
+         {
+         "id":"1",
+         "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS",
+         "cardSubtitle":"Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG do Grao en Enxeñaría Informática (GEI) ou do Grao en Ciencia e Enxeñaría de Datos (GECD) da Facultade de Informática da Universidade da Coruña. A Cátedra CICAS concede as bolsas a:",
+         "cardLink":"https://bit.ly/resolucionBolsasCICAS-2223",
+         "cardTable":[
+            {
+               "id":"1",
+               "recipient":"P. E., A. X.",
+               "dni":"****9469D",
+               "degree":"GRAO EN CIENCIA E ENXEÑARÍA DE DATOS (GECD)",
+               "salary":"1.200,00 €"
+            },
+            {
+               "id":"2",
+               "recipient":"G. S., D.",
+               "dni":"****6451Y",
+               "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+               "salary":"1.200,00 €"
+            },
+            {
+               "id":"3",
+               "recipient":"C. S., I.",
+               "dni":"****0242H",
+               "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+               "salary":"1.200,00 €"
+            },
+            {
+               "id":"4",
+               "recipient":"Á. C., L. M.",
+               "dni":"****5411W",
+               "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+               "salary":"1.200,00 €"
+            }
+         ]
+      }
+   ]
+   }
+}
