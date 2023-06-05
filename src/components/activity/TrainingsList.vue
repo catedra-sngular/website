@@ -38,7 +38,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text trainings__text--description"> <a href="{{ card.cardLink }}" target="_blank">{{ card.cardLink }}</a></p>
+                        <p class="card-text trainings__text--description"> <a v-bind:href=card.cardLink target="_blank">{{ card.cardLink }}</a></p>
                     </div>
                 </div>
                 <p> </p>
