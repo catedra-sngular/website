@@ -4,8 +4,37 @@
       "description":"",
       "cards":[
          {
+         "id":"2",
+         "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS (xaneiro 2024)",
+         "cardSubtitle":"Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG do Grao en Enxeñaría Informática (GEI) ou do Grao en Ciencia e Enxeñaría de Datos (GECD) da Facultade de Informática da Universidade da Coruña. A Cátedra CICAS concede as bolsas a:",
+         "cardLink":"https://bit.ly/resolucionBolsasCICAS-2324",
+         "cardTable":[
+            {
+               "id":"1",
+               "recipient":"J. S., A.",
+               "dni":"****1503D",
+               "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+               "salary":"1.200,00 €"
+            },
+            {
+               "id":"2",
+               "recipient":"R. B., A.",
+               "dni":"****6888N",
+               "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+               "salary":"1.200,00 €"
+            },
+            {
+               "id":"3",
+               "recipient":"R. R., C.",
+               "dni":"****9303S",
+               "degree":"GRAO EN CIENCIA E ENXEÑARÍA DE DATOS (GECD)",
+               "salary":"1.200,00 €"
+            }
+         ]
+      },
+      {
          "id":"1",
-         "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS",
+         "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS (maio 2023)",
          "cardSubtitle":"Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG do Grao en Enxeñaría Informática (GEI) ou do Grao en Ciencia e Enxeñaría de Datos (GECD) da Facultade de Informática da Universidade da Coruña. A Cátedra CICAS concede as bolsas a:",
          "cardLink":"https://bit.ly/resolucionBolsasCICAS-2223",
          "cardTable":[
