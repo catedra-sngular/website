@@ -4,6 +4,42 @@
       "description":"",
       "cards":[
          {
+            "id":"3",
+            "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS (xuño 2024)",
+            "cardSubtitle":"Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG e TFM da Facultade de Informática da Universidade da Coruña. A Cátedra CICAS concede as bolsas a:",
+            "cardLink":"https://bit.ly/resolucionBolsasCICAS-2324B",
+            "cardTable":[
+               {
+                  "id":"1",
+                  "recipient":"B. P., A.",
+                  "dni":"***5576**",
+                  "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+                  "salary":"1.200,00 €"
+               },
+               {
+                  "id":"2",
+                  "recipient":"V. P., P.",
+                  "dni":"***8500**",
+                  "degree":"GRAO EN ENXEÑARÍA INFORMÁTICA (GEI)",
+                  "salary":"1.200,00 €"
+               },
+               {
+                  "id":"3",
+                  "recipient":"A. S., L.",
+                  "dni":"***1113**",
+                  "degree":"GRAO EN CIENCIA E ENXEÑARÍA DE DATOS (GECD)",
+                  "salary":"1.200,00 €"
+               },
+               {
+                  "id":"4",
+                  "recipient":"S. M., S.",
+                  "dni":"***2492**",
+                  "degree":"MESTRADO EN BIOINFORMÁTICA PARA CIENCIAS DA SAÚDE (MUBICS)",
+                  "salary":"1.200,00 €"
+               }
+            ]
+         },
+         {
          "id":"2",
          "cardTitle":"RESOLUCIÓN DA CONVOCATORIA DE AXUDAS PARA A REALIZACIÓN DE TRABALLOS DE FIN DE GRAO DA CÁTEDRA CICAS (xaneiro 2024)",
          "cardSubtitle":"Publícase a relación de concesión de bolsas da convocatoria para a realización de TFG do Grao en Enxeñaría Informática (GEI) ou do Grao en Ciencia e Enxeñaría de Datos (GECD) da Facultade de Informática da Universidade da Coruña. A Cátedra CICAS concede as bolsas a:",
